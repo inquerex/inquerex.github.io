@@ -52,7 +52,7 @@
 
 | 1a | 1b | 2 | 3a | 3b |
 | :------------: | :------------: | :------------: | :------------: |
-| **[words]** | **[words]** | **[words]**  | **words**  | **[words]**  |
+| **[words]** | **[words]** | **[words]** | **words** | **[words]** |
 | <sub>context before<sub>1</sub></sub> | <sub>context before<sub>2</sub></sub> | <sub>match</sub> | <sub>context after<sub>1</sub></sub> | <sub>context after<sub>2</sub></sub> |
 
 #### *e. Context parts may be divided.*
