@@ -13,10 +13,10 @@
 | x **[words]** | "words" *must* appear after x |
 | **~[words]** x | "words" *must not* appear before x |
 | x **~[words]** | "words" *must not* appear after x |
-|  [words]**{n}** x | "n" words between "words" and x  <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>x</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>x</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
+|  [words]**{n}** x | set a limit of "n" words between "words" and x  <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>x</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>x</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
 | **(x)**  | x *may* appear in the text  |
 | **\***  | one or more letters and/or whole numbers  |
-| **word1/word2**  | word1 *or* word2  |
+| **word<sub>1</sub>/word<sub>2</sub>**  | word<sub>1</sub> *or* word<sub>2</sub>  |
 | **/string/** | "string" is a perl-compatible regular expression  |
 | **\\**  | interpret the next character literally <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  \\[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\( &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\\* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\"  <br> &nbsp; |
 
@@ -37,28 +37,21 @@
 | - | **words**  | - |
 | - | <sub>match</sub>  | - |
 
-#### *c. A match can't be 100% optional.*
-
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 2  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| :------------: | :------------: | :------------: |
-| - | ~~**(words)**~~  | - |
-| - | <sub>match</sub>  | - |
-
-#### *d. Only one match part is allowed.*
+#### *c. Only one match part is allowed.*
 
 | 1  | 2  | 3  |
 | :------------: | :------------: | :------------: |
 | ~~words~~  | ~~[words]~~ | ~~words~~  |
 | &nbsp;&nbsp;<sub>match</sub>&nbsp;&nbsp; | <sub>context before?</sub><br><sub>context after?</sub>  | &nbsp;&nbsp;<sub>match</sub> &nbsp;&nbsp; |
 
-#### *e. Context parts may be multiplied.*
+#### *d. Context parts may be multiplied.*
 
 | 1a  | 1b  | 2 | 3 |
 | :------------: | :------------: | :------------: | :------------: |
 | **[words]** | **[words]** | **[words]**  | **words**  | **[words]**  |
 | <sub>context before<sub>1</sub></sub> | <sub>context before<sub>2</sub></sub> | <sub>match</sub> | <sub>context after</sub> |
 
-#### *f. Context parts may be divided.*
+#### *e. Context parts may be divided.*
 
 | 1  | 2  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
 | :------------: | :------------: | :------------: |
