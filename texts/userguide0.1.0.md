@@ -37,7 +37,7 @@
 | - | **words**  | - |
 | - | <sub>match</sub>  | - |
 
-#### *c. Matches can't be 100% optional.*
+#### *c. A match can't be 100% optional.*
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 2  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | :------------: | :------------: | :------------: |
