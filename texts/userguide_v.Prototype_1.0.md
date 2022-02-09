@@ -63,7 +63,7 @@
 | 1  | 2  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
 | :------------: | :------------: | :------------: |
 | **[ [ words ] words [ words ] ]**  | **words**  | - |
-| /---------------<sub>context before</sub>---------------/ | <sub>main match</sub>  | - |
+| /-------------<sub>context before</sub>-------------/ | <sub>main match</sub>  | - |
 | <sub>/---context---/---match---/--context---/</sub> | - | - |
 
 ### 3. Example Set<sub>a</sub>
