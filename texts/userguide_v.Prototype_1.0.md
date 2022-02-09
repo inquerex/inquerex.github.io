@@ -4,7 +4,7 @@
 ## Local Search
 ### How to Craft a Query
 
-<br><br>
+
 
 ### 1. Building Blocks
 
