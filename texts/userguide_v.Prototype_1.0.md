@@ -109,6 +109,9 @@ tyrant, tyrants, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
 ####  [best] Sethe
 You your best thing, <span style="background-color: #B8860B"><span style="color: #FFFFFF">Sethe</span></span>. You are.
 
+####  [You your]{2} Sethe
+You your best thing, <span style="background-color: #B8860B"><span style="color: #FFFFFF">Sethe</span></span>. You are.
+
 ####  best [are]{1-3}
 You your <span style="background-color: #B8860B"><span style="color: #FFFFFF">best</span></span> thing, Sethe. You are.
 
