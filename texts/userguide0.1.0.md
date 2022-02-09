@@ -13,12 +13,12 @@
 | x **[words]** | "words" *must* appear after x |
 | **~[words]** x | "words" *must not* appear before x |
 | x **~[words]** | "words" *must not* appear after x |
-|  [words]**{n}** x | "n" words between "words" and x  |
+|  [words]**{n}** x | "n" words between "words" and x  <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>x</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>x</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
 | **(x)**  | x *may* appear in the text  |
 | **\***  | one or more letters and/or whole numbers  |
 | **word1/word2**  | word1 *or* word2  |
 | **/string/** | "string" is a perl-compatible regular expression  |
-| **\\**  | interpret the next character literally <br> &nbsp;&nbsp;&nbsp;\\[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\"  |
+| **\\**  | interpret the next character literally <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  \\[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\( &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\\* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\"  <br> &nbsp; |
 
 ### 2. Rules
 
@@ -37,12 +37,12 @@
 | - | **words**  | - |
 | - | <sub>match</sub>  | - |
 
-#### *c. Match parts can't be optional.*
+#### *c. Matches can't be 100% optional.*
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 2  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | :------------: | :------------: | :------------: |
 | - | ~~**(words)**~~  | - |
-| - | <sub>match?</sub>  | - |
+| - | <sub>match</sub>  | - |
 
 #### *d. Only one match part is allowed.*
 
