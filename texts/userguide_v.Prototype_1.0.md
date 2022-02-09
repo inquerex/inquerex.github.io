@@ -1,7 +1,7 @@
 [![Inquerex](https://www.inquerex.com/images/inquerex100px.png "Inquerex")](http://www.inquerex.com "Inquerex")
 # User Guide (v. Prototype 1.0)
 
-## Local Search (1.0)
+## Local Search
 ### How to Craft a Query
 
 ### 1. Building Blocks
