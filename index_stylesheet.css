@@ -46,3 +46,6 @@ p {
     padding-left: .5em;
     padding-right: .5em;
 }
+a:hover {
+    color: #B8860B;
+}
