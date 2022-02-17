@@ -5,7 +5,7 @@ h1 {
     color: #ffffff;
     margin-bottom: .1em;
     text-decoration: strong;
-  }
+}
 h2 {
     text-align: center;
     font-family: Futura;
@@ -13,7 +13,7 @@ h2 {
     color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
-  }
+}
 h2 a {
     text-align: center;
     font-family: Futura;
@@ -21,7 +21,10 @@ h2 a {
     color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
-  }
+}
+h2 a:hover {
+    color: #B8860B;
+}
 h3 {
     text-align: center;
     font-family: Futura;
@@ -30,22 +33,19 @@ h3 {
     color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
-  }
+}
 table {
     text-align: center;
     margin: .3em;
-  }
+}
 td {
     text-align: center;
     padding-left: .5em;
     padding-right: .5em;
-  }
+}
 p {
     text-align: center;
     color: #ffffff;
     padding-left: .5em;
     padding-right: .5em;
-}
-a:hover {
-    color: #B8860B;
 }
