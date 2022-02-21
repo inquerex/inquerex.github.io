@@ -1,10 +1,10 @@
 html {
-    background-color: #ffffff;
+    background-color: #171717;
 }
 
 body {
     font-size: 100%;
-    background-color: #ffffff;
+    background-color: #171717;
 }
 
 .logo {
@@ -54,7 +54,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #171717;
     font-family: Futura;
     font-size: 6vw;
     font-weight: strong;
@@ -81,7 +81,7 @@ h1 {
     text-align: center;
     font-family: Futura;
     font-size: 17vw;
-    color: #171717;
+    color: #ffffff;
     margin-bottom: .1em;
     text-decoration: strong;
 }
@@ -90,7 +90,7 @@ h2 {
     text-align: center;
     font-family: Futura;
     font-size: 4vw;
-    color: #171717;
+    color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
 }
@@ -100,7 +100,7 @@ h3 {
     font-family: Futura;
     font-size: 5vw;
     font-style: italic;
-    color: #171717;
+    color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
 }
@@ -109,6 +109,6 @@ h4 {
     text-align: center;
     font-family: Futura;
     font-size: 2vw;
-    color: #ffffff;
+    color: #171717;
     margin-bottom: .3em;
 }

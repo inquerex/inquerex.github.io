@@ -1,9 +1,9 @@
 html {
-    background-color: #ffffff;
+    background-color: #171717;
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #171717;
     font-size: 100%;
 }
 
@@ -28,7 +28,7 @@ h1 {
     text-align: center;
     font-family: Futura;
     font-size: 6em;
-    color: #171717;
+    color: #ffffff;
     margin-bottom: .1em;
     text-decoration: strong;
 }
@@ -37,7 +37,7 @@ h2 {
     text-align: center;
     font-family: Futura;
     font-size: 1em;
-    color: #171717;
+    color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
 }
@@ -46,7 +46,7 @@ h2 a {
     text-align: center;
     font-family: Futura;
     font-size: 1em;
-    color: #171717;
+    color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
 }
@@ -60,7 +60,7 @@ h3 {
     font-family: Futura;
     font-size: 1em;
     font-style: italic;
-    color: #171717;
+    color: #ffffff;
     margin-bottom: .3em;
     text-decoration: strong;
 }
@@ -69,7 +69,7 @@ h4 {
     text-align: center;
     font-family: Futura;
     font-size: 2vw;
-    color: #ffffff;
+    color: #171717;
     margin-bottom: .3em;
 }
 
@@ -86,7 +86,7 @@ td {
 
 p {
     text-align: center;
-    color: #171717;
+    color: #ffffff;
     padding-left: .5em;
     padding-right: .5em;
 }
