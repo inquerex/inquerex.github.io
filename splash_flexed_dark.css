@@ -1,0 +1,92 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+    font-size: 100%;
+}
+
+.logo {
+    width: 220px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.learn_more {
+    width: 600px;
+}
+
+.learn_more img {
+    position: center;
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 6em;
+    color: #171717;
+    margin-bottom: .1em;
+    text-decoration: strong;
+}
+
+h2 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 1em;
+    color: #171717;
+    margin-bottom: .3em;
+    text-decoration: strong;
+}
+
+h2 a {
+    text-align: center;
+    font-family: Futura;
+    font-size: 1em;
+    color: #171717;
+    margin-bottom: .3em;
+    text-decoration: strong;
+}
+
+h2 a:hover {
+    color: #B8860B;
+}
+
+h3 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 1em;
+    font-style: italic;
+    color: #171717;
+    margin-bottom: .3em;
+    text-decoration: strong;
+}
+
+h4 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 2vw;
+    color: #ffffff;
+    margin-bottom: .3em;
+}
+
+table {
+    text-align: center;
+    margin: .3em;
+}
+
+td {
+    text-align: center;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+p {
+    text-align: center;
+    color: #171717;
+    padding-left: .5em;
+    padding-right: .5em;
+}
