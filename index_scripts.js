@@ -18,7 +18,8 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
         link.href = 'splash_flexed_light.css';
     }
     $().ready(function() {
-        $("#menu").html("<td><p>  </p></td><td><h2><a href=\"https://www.inquerex.com/texts/features.html\">Features</a></h2></td><td><p> : : </p></td><td<h2><a href=\"mailto:support@inquerex.com\">Feedback</a></h2></td><td><p> : : </p></td><td><h2><a href=\"https://www.inquerex.com/texts/userguide_v.Prototype_1.0.html\">User Guide</a></h2></td>");
+        $("#menu").html("<td><h2><a href=\"https://www.inquerex.com/texts/features.html\">Features</a><h2></td><td><p> : </p></td><td><h2><a href=\"mailto:support@inquerex.com\">Feedback</a></h2></td><td><p> : </p></td><td><h2><a href=\"https://www.inquerex.com/texts/userguide_v.Prototype_1.0.html\">User Guide</a></h2></td>");
     });
 }     
-head.appendChild(link); 
+head.appendChild(link);
+if(window.__firefox__){window.__firefox__.NightMode.setEnabled(false);}
