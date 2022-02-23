@@ -2,7 +2,7 @@
 
 Prototype 1.0
 
-## Search in PDFs
+## Search PDFs
 ### How to Craft a Search Query
 
 <br>
