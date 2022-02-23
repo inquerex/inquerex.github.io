@@ -11,10 +11,10 @@ Array.from(document.querySelectorAll("style")).forEach((sheet) => {
 
 // Hide and show navigation buttons. //
 function toggleNav() {
-  var x = document.getElementById("navButtons");
-  if (x.style.visibility === "hidden") {
-    x.style.visibility = "visible";
+  var navButtons = document.getElementById("navButtons");
+  if (navButtons.style.visibility === "hidden") {
+    navButtons.style.visibility = "visible";
   } else {
-    x.style.visibility = "hidden";
+    navButtons.style.visibility = "hidden";
   }
 }
