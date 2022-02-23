@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inquerex</title>
-    <link href="images/inquerex1024px.png" rel="icon" type="image/png" />
+    <link href="images/inquerex100px.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="splash.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="index_scripts.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
-    <div>
-        <table>
-            <tr>
-                <td>
-                    <div class="logo">
-                        <img src="images/inquerex1024px.png" alt="Inquerex">
-                    </div>
-                </td>
-                <td>
-                    <div id="menu" class="menu"></div>
-                </td>
-            </tr>
-        </table>
-        <h1>inquerex</h1>
-        <h3>digital tools for critical inquiry</h3>
-        <br>
-        <div class="learn_more">
-            <a href="texts/features.html"><img src="images/learn_more.png" onmouseover="this.src='images/learn_more_hover.png';" onmouseout="this.src='images/learn_more.png';" alt="Learn More"></a>
+    <section id="header">
+        <div><img src="images/inquerex500px.png" alt="Inquerex"></div>
+        <div><img src='images/navIcon.png' onmouseover="this.src='images/navIcon_hover.png';" onmouseout="this.src='images/navIcon.png';" onclick="toggleNav()" alt="Navigation"></div>
+    </section>
+    <section id="navButtons" style="visibility: hidden">
+        <h2><a href='texts/features.html'>Features</a></h2>
+        <h2><a href='mailto:support@inquerex.com'>Feedback</a></h2>
+        <h2><a href='https://www.inquerex.com/texts/userguide_v.Prototype_1.0.html'>User Guide</a></h2>
+    </section>
+    <section id="mainText">
+        <div>
+            <span id="name"><h1>inquerex</h1></span>
         </div>
-    </div>
-    <br><br><br><br>
+        <div>
+            <span id="tag"><h3>digital tools for critical inquiry</h3></span>
+        </div>
+    </section>
+    <section id="mainButton">
+        <div id="learnMore">
+            <a href="texts/features.html"><img src="images/learnMore.png" onmouseover="this.src='images/learnMore_hover.png';" onmouseout="this.src='images/learnMore.png';" alt="Learn More"></a>
+        </div>
+    </section>
+    <!-- <span id="blah" style="color:white">HEYO!</span> -->
 </body>
 </html>
+<script>
+    var mql = window.matchMedia('(min-height: 15cm)');
+    var blaha = document.getElementById("blah")
+    if (mql.matches === true) {
+        blaha.innerHTML = "less than 8cm";
+    } else {
+        blaha.innerHTML = "more";
+    }
+</script>

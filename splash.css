@@ -1,0 +1,117 @@
+html {
+    background-color: #171717;
+}
+
+body {
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+section {
+    display: flex;
+}
+
+#header {
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#header div:first-child {
+    flex: 4;
+    justify-content: flex-start;
+}
+
+#header div:first-child img {
+    width: 25%;
+}
+
+#header div:last-child {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#header div:last-child img {
+    width: 75%;
+}
+
+#navButtons {
+    display: flex;
+    width: 95%;
+    justify-content: flex-end;
+    margin-right: 50%;
+    background-color: #171717;
+}
+
+#navButtons h2 {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: #171717;
+}
+
+#mainText {
+    flex-flow: column;
+    justify-content: center;
+}
+
+#mainText div {
+    justify-content: center;
+}
+
+#mainButton {
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#mainButton img {
+    width: 40vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 13vh;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: strong;
+}
+
+h2 a {
+    text-align: center;
+    font-family: Futura;
+    font-size: 3vh;
+    color: #ddd;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: strong;
+    justify-content: space-around;
+}
+
+h2 a:hover {
+    color: #B8860B;
+}
+
+h3 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 4vh;
+    font-style: italic;
+    color: #ddd;
+    margin-bottom: 0;
+    text-decoration: strong;
+}
+
+h4 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 10vh;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: strong;
+}
