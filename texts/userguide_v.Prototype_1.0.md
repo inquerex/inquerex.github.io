@@ -7,7 +7,7 @@ Prototype 1.0
 
 A "search query" is a chunk of text that your computer uses to find things for you. People write search queries all the time when they browse the internet. They might go to a search engine website (e.g., Google, DuckDuckGo, etc.) and type some text inside a box there. Or they might type some text in the long, horizontal box at the top of a web browser. Either way, your computer uses the words you type, with the help of a search engine, to find webpages that contain some or all of those words.
 
-Inquerex's "search PDFs" tool is like a search engine for finding particular pages inside pdfs stored on your computer. You'll start by selecting the pdf files in which you want to perform a search. And then you'll enter a search query. But, unlike when you use search queries on the internet, when you use a search query with Inquerex's "search PDFs" tool, you'll find only those pdf pages containing an **exact match** of the word or words you entered. With Google, say, you'd enter a loose group of keywords to find webpages. With Inquerex, however, you'll use the building blocks below to craft a query that'll yield **only those pdf pages with an exact match** -- a set of one or more words that satisfies every condition in your query.
+Inquerex's "search PDFs" tool is like a search engine for finding particular pages inside pdfs stored on your computer. You'll start by selecting the pdf files in which you want to perform a search. And then you'll enter a search query. But, unlike when you use search queries on the internet, when you use a search query with Inquerex's "search PDFs" tool, you'll find only those pdf pages containing an **exact match** of the word or words you entered. With Google, say, you might enter a loose group of keywords to find webpages about a particular topic. With Inquerex, however, you'll use the building blocks below to write a query that'll yield **only those pdf pages containing a match** where a "match" is any word or phrase that satisfies every condition in your query. As you'll see, below, your query could include some complex conditions.
 
 <br>
 
@@ -15,13 +15,13 @@ Inquerex's "search PDFs" tool is like a search engine for finding particular pag
 
 | Expression | Interpretation |
 | :------------ | :------------ |
-| **words** | "words" *must* be matched in the text |
+| **words** | "words" *must* be matched on the page |
 | **[words]** m | "words" *must* appear before match |
 | m **[words]** | "words" *must* appear after match |
 | **~[words]** m | "words" *must not* appear before match |
 | m **~[words]** | "words" *must not* appear after match |
 | [words]**{n}** m | with "n" words between "words" and match <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>x</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>x</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
-| **(characters)** | "characters" *may* be matched in the text |
+| **(characters)** | "characters" *may* be present |
 | **\*** | one or more letters and/or whole numbers |
 | **word<sub>1</sub>/word<sub>2</sub>**  | word<sub>1</sub> *or* word<sub>2</sub> |
 | **/string/** | "string" is a perl-compatible regular expression |
