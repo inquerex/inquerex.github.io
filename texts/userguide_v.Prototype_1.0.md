@@ -5,9 +5,9 @@ Prototype 1.0
 ## Search PDFs
 ### How to Craft a Search Query
 
-A "search query" is a chunk of text that your computer uses to find things for you. People write search queries all the time when they browse the internet. They might go to a search engine website (e.g., Google, DuckDuckGo, etc.) and type some text inside a box there. Or they might type some text in the long, horizontal box at the top of a web browser. Either way, your computer uses the words you type, with the help of a search engine, to find webpages that contain some or all of those words.
+A "search query" is a chunk of text that your computer uses to find things for you. You probably write search queries all the time when you browse the internet. Maybe you go to a search engine website (e.g., Google, DuckDuckGo, etc.) and type some text inside a box there. Or you might type some text in the long, horizontal box at the top of your web browser. Either way, your computer uses the words you type, with the help of a search engine, to find webpages containing some or all of those words.
 
-Inquerex's "search PDFs" tool is like a search engine for finding particular pages inside pdfs stored on your computer. You'll start by selecting the pdf files in which you want to perform a search. And then you'll enter a search query. But, unlike when you use search queries on the internet, when you use a search query with Inquerex's "search PDFs" tool, you'll find only those pdf pages containing an **exact match** of the word or words you entered. With Google, say, you might enter a loose group of keywords to find webpages about a particular topic. With Inquerex, however, you'll use the building blocks below to write a query that'll yield **only those pdf pages containing a match**, where a "match" is any word or phrase that satisfies every condition in your query. As you'll see, below, your query could include some complex conditions.
+Inquerex's "search PDFs" tool is like a search engine for finding particular pages inside pdfs on your computer. You'll start by selecting the pdf files you want to search. Then you'll enter a search query. Unlike search queries on the internet, however, Inquerex's search queries will find only those pdf pages containing an **exact match** of the word or phrase you entered. With Google, say, you might enter a group of keywords to find webpages about a particular topic. With Inquerex, however, you'll use the building blocks below to write a query that'll yield **only those pdf pages containing a match**, where a "match" is any word or phrase that satisfies every condition in your query. As you'll see, your query can include some complex conditions.
 
 <br>
 
@@ -15,7 +15,7 @@ Inquerex's "search PDFs" tool is like a search engine for finding particular pag
 
 | Expression | Interpretation |
 | :------------ | :------------ |
-| **words** | "words" *must* be matched on the page |
+| **words** | "words" *must* be matched |
 | **[words]** m | "words" *must* appear before match |
 | m **[words]** | "words" *must* appear after match |
 | **~[words]** m | "words" *must not* appear before match |
