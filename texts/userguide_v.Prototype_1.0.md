@@ -5,6 +5,10 @@ Prototype 1.0
 ## Search PDFs
 ### How to Craft a Search Query
 
+A "search query" is a chunk of text that your computer uses to find things for you. People write search queries all the time when they browse the internet. They might go to a search engine website (e.g., Google, DuckDuckGo, etc.) and type some text inside a box there. Or they might type some text in the long, horizontal box at the top of a web browser. Either way, your computer uses the words you type, with the help of a search engine, to find webpages that contain some or all of those words.
+
+Inquerex's "search PDFs" tool is like a search engine for finding particular pages inside pdfs stored on your computer. You'll start by selecting the pdf files in which you want to perform a search. And then you'll enter a search query. But, unlike when you use search queries on the internet, when you use a search query with Inquerex's "search PDFs" tool, you'll find only those pdf pages containing an **exact match** of the word or words you entered. With Google, say, you enter a loose group of keywords to find webpages. With Inquerex, however, you use the building blocks below to craft a query that will yield only those pdf pages with an exact match.
+
 <br>
 
 ### 1. Building Blocks
