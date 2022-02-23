@@ -11,13 +11,13 @@ Prototype 1.0
 
 | Expression | Interpretation |
 | :------------ | :------------ |
-| **words** | "words" *must* appear in the text |
-| **[words]** x | "words" *must* appear before x |
-| x **[words]** | "words" *must* appear after x |
-| **~[words]** x | "words" *must not* appear before x |
-| x **~[words]** | "words" *must not* appear after x |
-| [words]**{n}** x | with "n" words between "words" and x  <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>x</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>x</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
-| **(x)** | x *may* appear |
+| **words** | "words" *must* be matched in the text |
+| **[words]** m | "words" *must* appear before match |
+| m **[words]** | "words" *must* appear after match |
+| **~[words]** m | "words" *must not* appear before match |
+| m **~[words]** | "words" *must not* appear after match |
+| [words]**{n}** m | with "n" words between "words" and match <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>x</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>x</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
+| **(characters)** | "characters" *may* be matched in the text |
 | **\*** | one or more letters and/or whole numbers |
 | **word<sub>1</sub>/word<sub>2</sub>**  | word<sub>1</sub> *or* word<sub>2</sub> |
 | **/string/** | "string" is a perl-compatible regular expression |
