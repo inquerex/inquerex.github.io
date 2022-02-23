@@ -6,8 +6,6 @@ body {
     background-color: #171717;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
 }
 
 section {
@@ -68,13 +66,13 @@ section {
 }
 
 #mainButton img {
-    width: 40vh;
+    width: 30vh;
 }
 
 h1 {
     text-align: center;
     font-family: Futura;
-    font-size: 13vh;
+    font-size: 9vh;
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 0;
@@ -84,7 +82,7 @@ h1 {
 h2 a {
     text-align: center;
     font-family: Futura;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: #ddd;
     margin-top: 0;
     margin-bottom: 0;
@@ -99,19 +97,9 @@ h2 a:hover {
 h3 {
     text-align: center;
     font-family: Futura;
-    font-size: 4vh;
+    font-size: 3vh;
     font-style: italic;
     color: #ddd;
-    margin-bottom: 0;
-    text-decoration: strong;
-}
-
-h4 {
-    text-align: center;
-    font-family: Futura;
-    font-size: 10vh;
-    color: #ffffff;
-    margin-top: 0;
     margin-bottom: 0;
     text-decoration: strong;
 }

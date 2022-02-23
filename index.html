@@ -12,7 +12,7 @@
 <body>
     <section id="header">
         <div><img src="images/inquerex500px.png" alt="Inquerex"></div>
-        <div><img src='images/navIcon.png' onmouseover="this.src='images/navIcon_hover.png';" onmouseout="this.src='images/navIcon.png';" onclick="toggleNav()" alt="Navigation"></div>
+        <div><img src='images/navIcon.png' onclick="toggleNav()" alt="Navigation"></div>
     </section>
     <section id="navButtons" style="visibility: hidden">
         <h2><a href='texts/features.html'>Features</a></h2>
@@ -29,18 +29,8 @@
     </section>
     <section id="mainButton">
         <div id="learnMore">
-            <a href="texts/features.html"><img src="images/learnMore.png" onmouseover="this.src='images/learnMore_hover.png';" onmouseout="this.src='images/learnMore.png';" alt="Learn More"></a>
+            <a href="texts/features.html"><img src="images/learnMore.png" alt="Learn More"></a>
         </div>
     </section>
-    <!-- <span id="blah" style="color:white">HEYO!</span> -->
 </body>
 </html>
-<script>
-    var mql = window.matchMedia('(min-height: 15cm)');
-    var blaha = document.getElementById("blah")
-    if (mql.matches === true) {
-        blaha.innerHTML = "less than 8cm";
-    } else {
-        blaha.innerHTML = "more";
-    }
-</script>
