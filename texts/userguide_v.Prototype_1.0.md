@@ -1,6 +1,8 @@
-# User Guide (v. Prototype 1.0)
+# User Guide
 
-## Local Search
+Prototype 1.0
+
+## Search in PDFs
 ### How to Craft a Query
 
 <br>
