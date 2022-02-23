@@ -1,5 +1,13 @@
-// Disable FF Night Mode; Night Mode inverts dark color schemes. //
-if(window.__firefox__){window.__firefox__.NightMode.setEnabled(false);}
+// Remove FF's Night Mode, if present. //
+Array.from(document.querySelectorAll("style")).forEach((sheet) => {
+    if (
+      sheet.textContent?.includes(
+        "-webkit-filter: hue-rotate(180deg) invert(100%) !important;"
+      )
+    ) {
+      sheet.parentNode?.removeChild(sheet);
+    }
+  });
 
 // Hide and show navigation buttons. //
 function toggleNav() {
