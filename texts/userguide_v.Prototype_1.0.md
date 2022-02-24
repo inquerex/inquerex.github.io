@@ -20,7 +20,7 @@ Inquerex's "search PDFs" tool is like a search engine for finding particular pag
 | x **[words]** | "words" *must* appear on the page, after x |
 | **~[words]** x | "words" *must not* appear on the page, before x |
 | x **~[words]** | "words" *must not* appear on the page, after x |
-| [words]**{n}** x | with "n" words between "words" and x <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>z</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>z</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
+| [words]**{n}** x | with n words between "words" and x <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>z</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>z</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
 | **(characters)** | "characters" may appear, too |
 | **\*** | one or more letters and/or digits |
 | **a/b**  | a *or* b |
@@ -155,6 +155,9 @@ You your best thing, Sethe. You are.
 
 #### (Y/y)ou\*
 You <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. You are.
+
+#### (Y/y)ou
+You your best thing, Sethe. You are.
 
 #### you(\*)
 You <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. You are.
