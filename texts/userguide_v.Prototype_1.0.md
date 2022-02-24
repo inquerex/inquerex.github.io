@@ -7,7 +7,7 @@ Prototype 1.0
 
 A "search query" is a chunk of text that your computer uses to find things for you. You probably write search queries all the time when you browse the internet. Maybe you go to a search engine website (e.g., Google, DuckDuckGo, etc.) and type some text inside a box there. Or maybe you type some text in the long, horizontal box at the top of your web browser. In both cases, your computer uses the words you type, with the help of a search engine, to find webpages containing some or all of those words.
 
-Inquerex's "search PDFs" tool is like a search engine for finding particular pages in pdfs on your computer. You'll start by selecting the pdf files you want to search. Then you'll enter a search query. Unlike search queries on the internet, however, Inquerex's search queries will find only those pdf pages containing an **exact match** of the word or phrase you entered. You'll use the building blocks below to craft a query that'll yield only those pdf pages containing a match, where a "match" is any word or phrase that satisfies every condition in your query. And as you'll see, below, your query can contain some complex conditions.
+Inquerex's "search PDFs" tool is like a search engine for finding particular pages in pdfs on your computer. You'll start by selecting the pdf files you want to search. Then you'll enter a search query. Unlike search queries on the internet, however, Inquerex's search queries will find only those pdf pages containing an **exact match** of the word or phrase you entered. You'll use the building blocks below to craft a query that'll find pages containing matches, where a "match" is any word or phrase that satisfies every condition in your query. As you'll see, below, your query can contain some complex conditions.
 
 <br>
 
@@ -15,14 +15,14 @@ Inquerex's "search PDFs" tool is like a search engine for finding particular pag
 
 | Expression | Interpretation |
 | :------------ | :------------ |
-| **words** | "words" *must* be matched |
-| **[words]** m | "words" *must* appear before match |
-| m **[words]** | "words" *must* appear after match |
-| **~[words]** m | "words" *must not* appear before match |
-| m **~[words]** | "words" *must not* appear after match |
-| [words]**{n}** m | with "n" words between "words" and match <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>x</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>x</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
-| **(characters)** | "characters" *may* be present |
-| **\*** | one or more letters and/or whole numbers |
+| **words** | "words" *must* appear on the page |
+| **[words]** x | "words" *must* appear on the page, before x |
+| x **[words]** | "words" *must* appear on the page, after x |
+| **~[words]** x | "words" *must not* appear on the page, before x |
+| x **~[words]** | "words" *must not* appear on the page, after x |
+| [words]**{n}** x | with "n" words between "words" and x <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>z</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>z</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
+| **(characters)** | "characters" *may* appear on the page |
+| **\*** | one or more letters and/or digits |
 | **word<sub>1</sub>/word<sub>2</sub>**  | word<sub>1</sub> *or* word<sub>2</sub> |
 | **/string/** | "string" is a perl-compatible regular expression |
 | **\\** | interpret the next character literally <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  \\[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\( &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\\* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\"  <br> &nbsp; |
