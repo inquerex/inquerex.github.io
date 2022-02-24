@@ -21,7 +21,7 @@ Inquerex's "search PDFs" tool is like a search engine for finding particular pag
 | **~[words]** x | "words" *must not* appear on the page, before x |
 | x **~[words]** | "words" *must not* appear on the page, after x |
 | [words]**{n}** x | with "n" words between "words" and x <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>z</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>z</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
-| **(characters)** | "characters" *may* appear on the page |
+| **(characters)** | "characters" may appear, too |
 | **\*** | one or more letters and/or digits |
 | **word<sub>1</sub>/word<sub>2</sub>**  | word<sub>1</sub> *or* word<sub>2</sub> |
 | **/string/** | "string" is a perl-compatible regular expression |
@@ -36,37 +36,22 @@ Inquerex's "search PDFs" tool is like a search engine for finding particular pag
 | 1 | 2 | 3 |
 | :------------: | :------------: | :------------: |
 | **[words]** | **words** | **[words]** |
-| <sub>context before</sub> | <sub>match</sub> | <sub>context after</sub> |
+| <sub>context before</sub> | <sub>core</sub> | <sub>context after</sub> |
 
-
-#### *b. Only the match part is required.*
-
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | 1 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-| :------------: | :------------: | :------------: |
-| - | **words** | - |
-| - | <sub>match</sub> | - |
-
-#### *c. Only one match part is allowed.*
-
-| 1 | 2 | 3 |
-| :------------: | :------------: | :------------: |
-| ~~words~~ | ~~[words]~~ | ~~words~~ |
-| &nbsp;&nbsp;<sub>match</sub>&nbsp;&nbsp; | <sub>context before?</sub><br><sub>context after?</sub>  | &nbsp;&nbsp;<sub>match</sub> &nbsp;&nbsp; |
-
-#### *d. Context parts may be multiplied.*
+#### *b. Context parts may be multiplied.*
 
 | 1a | 1b | 2 | 3 |
 | :------------: | :------------: | :------------: | :------------: |
 | **[words]** | **[words]** | **words** | **[words]** |
-| <sub>context before<sub>1</sub></sub> | <sub>context before<sub>2</sub></sub> | <sub>match</sub> | <sub>context after</sub> |
+| <sub>context before<sub>1</sub></sub> | <sub>context before<sub>2</sub></sub> | <sub>core</sub> | <sub>context after</sub> |
 
-#### *e. Context parts may be divided.*
+#### *c. Context parts may be divided.*
 
 | 1 | 2 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | :------------: | :------------: | :------------: |
 | **[ [ words ] words [ words ] ]** | **words** | - |
-| /------------<sub>context before</sub>------------/ | <sub>main match</sub> | - |
-| <sub>/---context---/---match---/--context---/</sub> | - | - |
+| /------------<sub>context before</sub>------------/ | <sub>core</sub> | - |
+| <sub>/---context---/---core---/--context---/</sub> | - | - |
 
 <br>
 
