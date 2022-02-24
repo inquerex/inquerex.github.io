@@ -69,6 +69,34 @@ section {
     width: 30vh;
 }
 
+#version {
+    text-align: center;
+    font-family: Futura;
+    font-size: 2vh;
+    color: #ddd;
+    margin-bottom: 0;
+}
+
+#paragraph {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: Futura;
+    font-size: 2vh;
+    color: #ddd;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Futura;
+    font-size: 2vh;
+    color: #ddd;
+    margin-bottom: 0;
+}
+
 h1 {
     text-align: center;
     font-family: Futura;
@@ -77,6 +105,17 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-decoration: strong;
+}
+
+h2 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 2vh;
+    color: #ddd;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: strong;
+    justify-content: space-around;
 }
 
 h2 a {
@@ -99,6 +138,15 @@ h3 {
     font-family: Futura;
     font-size: 3vh;
     font-style: italic;
+    color: #ddd;
+    margin-bottom: 0;
+    text-decoration: strong;
+}
+
+h4 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 4vh;
     color: #ddd;
     margin-bottom: 0;
     text-decoration: strong;
