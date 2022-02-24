@@ -23,7 +23,7 @@ Inquerex's "search PDFs" tool is like a search engine for finding particular pag
 | [words]**{n}** x | with "n" words between "words" and x <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n<sup>1</sup>-n<sup>z</sup>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup> . . . or n<sup>z</sup> words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {n+/n-} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n or more/less words <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {>n/\<n} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater/less than n words <br> &nbsp; |
 | **(characters)** | "characters" may appear, too |
 | **\*** | one or more letters and/or digits |
-| **word<sub>1</sub>/word<sub>2</sub>**  | word<sub>1</sub> *or* word<sub>2</sub> |
+| **a/b**  | a *or* b |
 | **/string/** | "string" is a perl-compatible regular expression |
 | **\\** | interpret the next character literally <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  \\[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\( &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\\* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\"  <br> &nbsp; |
 
@@ -72,6 +72,9 @@ tyrant, tyrants, <span style="background-color: #B8860B"><span style="color: #FF
 
 #### tyrant*
 tyrant, <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrants**</span></span>, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
+
+#### tyrant(\*)
+<span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrant**</span></span>, <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrants**</span></span>, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
 
 #### tyrant(s)
 <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrant**</span></span>, <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrants**</span></span>, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
@@ -147,8 +150,20 @@ You your best thing, <span style="background-color: #B8860B"><span style="color:
 ####  [ [your] thing [ ~[best] You ] Sethe
 You your best thing, Sethe. You are.
 
-####  [you(\*)]{\<4} ~[worst/worse] You ~[/\d+/]
-You your best thing, Sethe. <span style="background-color: #B8860B"><span style="color: #FFFFFF">You</span></span> are.
+#### (Y/y)ou(\*)
+<span style="background-color: #B8860B"><span style="color: #FFFFFF">You</span></span> <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. <span style="background-color: #B8860B"><span style="color: #FFFFFF">You</span></span> are.
+
+#### (Y/y)ou\*
+You <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. You are.
+
+#### you(\*)
+You <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. You are.
+
+#### you\*
+You <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. You are.
 
 #### you
 You your best thing, Sethe. You are.
+
+####  [you(\*)]{\<4} ~[worst/worse] You ~[/\d+/]
+You your best thing, Sethe. <span style="background-color: #B8860B"><span style="color: #FFFFFF">You</span></span> are.
