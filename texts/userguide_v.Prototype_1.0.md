@@ -157,7 +157,7 @@ You your best thing, Sethe. You are.
 You <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. You are.
 
 #### (Y/y)ou
-You your best thing, Sethe. You are.
+<span style="background-color: #B8860B"><span style="color: #FFFFFF">You</span></span> your best thing, Sethe. <span style="background-color: #B8860B"><span style="color: #FFFFFF">You</span></span> are.
 
 #### you(\*)
 You <span style="background-color: #B8860B"><span style="color: #FFFFFF">your</span></span> best thing, Sethe. You are.
