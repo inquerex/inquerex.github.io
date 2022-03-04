@@ -3,10 +3,12 @@
 ![Inquerex](https://www.inquerex.com/images/inquerex100px.png "Inquerex")
 
 
-Inquerex
+**Inquerex**
+
 Prototype 1.0
 
 I. Getting Oriented
+
 1. <a href="#synopsis">Synopsis</a>
 2. <a href="#why-inquerex">Why Inquerex?</a>
 3. <a href="#search-pdfs">Search PDFs</a>
@@ -14,15 +16,17 @@ I. Getting Oriented
 5. <a href="#installation">Installation</a>
 
 II. Performing a Search
+
 6. <a href="#selecting-pdfs-to-search">Selecting PDFs to Search</a>
 7. <a href="#entering-a-search-query">Entering a Search Query</a>
 8. <a href="#choosing-output-options">Choosing Output Options</a>
 9. <a href="#viewing-search-results">Viewing Search Results</a>
 
 III. Beyond Searches
+
 10. <a href="#your-inquerex-folder">Your Inquerex Folder</a>
 11. <a href="#settings">Settings</a>
-12. <a href="#writing-your-own-program">Writing Your Own Programs</a>
+12. <a href="#writing-your-own-programs">Writing Your Own Programs</a>
 13. <a href="#making-your-own-links">Making Your Own Links</a>
 14. <a href="#technical-footnotes">Technical Footnotes</a>
 15. <a href="#end-user-license-agreement">End-User License Agreement</a>
@@ -344,11 +348,11 @@ This group of settings lists the default values that Inquerex will suggest for *
 
 ### HTML Color Codes for the Final Output
 
-This group of settings lists the hexadecimal color codes for everything in the search results that has (or would have) a particular color. You can explore these color codes online (e.g., at [https://html-color.codes/](https://html-color.codes/)). A hexadecimal color code tells the computer how much red, green, and blue to use in a given color. The six characters that follow the # symbol contain three pairs, and they correspond with the values for red, green, and blue. If you want to change any/all of the colors that Inquerex uses in the search results, you can do so in this group of settings. The "default color" refers to the default color of all text. The "anchor" color refers to the color of the anchor text for navigation links internal to the search results file. That's why, by default, they're the same color as the background color, to hide them. All of the other color variable names should be easy enough to interpret, esp. with some experimentation.
+This group of settings lists the hexadecimal color codes for everything in the search results that has (or would have) a particular color. You can explore these color codes online (e.g., at [this webpage](https://html-color.codes/)). A hexadecimal color code tells the computer how much red, green, and blue to use in a given color. The six characters that follow the # symbol contain three pairs, and they correspond with the values for red, green, and blue. If you want to change any/all of the colors that Inquerex uses in the search results, you can do so in this group of settings. The "default color" refers to the default color of all text. The "anchor" color refers to the color of the anchor text for navigation links internal to the search results file. That's why, by default, they're the same color as the background color, to hide them. All of the other color variable names should be easy enough to interpret, esp. with some experimentation.
 
 ### HTML Entity Codes for the Final Output
 
-This group of settings lists the HTML entity codes for the handful of the symbols that appear in the search results file. An HTML entity code is a special combination of characters used to represent symbols in the webpage programming language known as HTML. To see a list of available HTML entities (and corresponding codes), visit [https://www.w3schools.com/charsets/ref_html_entities_4.asp](https://www.w3schools.com/charsets/ref_html_entities_4.asp). That webpage will list three different codes for each symbol; you can use any of them. **But omit the semicolon at the end.** The semicolon will cause Inquerex to misinterpret the settings file.
+This group of settings lists the HTML entity codes for the handful of the symbols that appear in the search results file. An HTML entity code is a special combination of characters used to represent symbols in the webpage programming language known as HTML. To see a list of available HTML entities (and corresponding codes), visit [this webpage](https://www.w3schools.com/charsets/ref_html_entities_4.asp). That webpage will list three different codes for each symbol; you can use any of them. **But omit the semicolon at the end.** The semicolon will cause Inquerex to misinterpret the settings file.
 
 ### Valid Character to Divide File Names
 
@@ -382,18 +386,20 @@ One of the simplest, but most useful, features of Inquerex's Search PDFs tool is
 ## Technical Footnotes
 
 * **Allowed Characters**: Inquerex is only able to interpret the "printable characters" on a US-ASCII table. Basically, Inquerex is able to interpret any character that you can type on a standard English keyboard by pressing and releasing a single key, with or without holding down the shift key. A full version of Inquerex's Search PDFs tool would support searching in languages other than English. Note, too, that the use of some characters (or character combinations) in some contexts will cause your search results to come out looking wrong or, at worst, Inquerex will become confused about how to complete the current search, so it'll quit and generate an error message (see "Exiting with a Non-Zero Status" below). Simply follow these rules about characters:
-	1. Never use '\' and '|' in the file names of selected PDFs.
+	1. Never use '\\' and '|' in the file names of selected PDFs.
 	2. Always type a space after '%' unless you want Inquerex to interpret the percent sign as the beginning of a percent-encoded character.
 	3. Only use numbers and letters when you're specifying page ranges to search.
 	4. Whenever you specify a page label in a page range to search, that page label must be unique within that PDF (i.e., no duplicate page labels).
-	5. In the file names of selected PDFs, never use '[' or an empty '[]' pair of square brackets followed immediately by a curly bracket '{' or '}'.
+	5. In the file names of selected PDFs, never use '\[' or an empty '\[ \]' pair of square brackets followed immediately by a curly bracket '{' or '}'.
 * **Zotero Integration**: If you're a Zotero user, and you want Inquerex to generate zotero:// links to open PDFs instead of inquerex:// links, then type 'prefer_zotero_links="y"' on a line by itself anywhere in the Settings file.
 * **Exiting with a Non-Zero Status**: If your computer issues an alert that says Inquerex "exited with a non-zero status," then either there's something that needs to be fixed in Inquerex's source code or there's something amiss about the input for the current search (e.g., a filename contains a forbidden character). Or both. If you want help troubleshooting what happened, and if you're able, send an email to support@inquerex.com with a copy of the lines.log file attached. You'll find the lines.log file in the Logs folder in your Inquerex folder.
 
 ## End-User License Agreement
 
 &#xA9; 2022, Brian Lee
+
 brian@inquerex.com
+
 www.inquerex.com
 
 >This software (any 'prototype' version of Inquerex) is distributed on an 'as is' basis, without warranties or conditions of any kind, either express or implied. Modification is permitted, but all redistribution, with or without modification, is prohibited.
