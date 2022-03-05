@@ -32,23 +32,3 @@ function sendEmail() {
       Body : "Someone downloaded Inquerex.dmg.",
     });
 }
-
-// Find matches
-var mql = window.matchMedia("(orientation: portrait)");
-
-// If there are matches, we're in portrait
-if(mql.matches) {  
-	console.log(mql)
-} else {  
-	console.log(mql)
-}
-
-// Add a media query change listener
-mql.addEventListener(function(m) {
-	if(m.matches) {
-		// Changed to portrait
-	}
-	else {
-		// Changed to landscape
-	}
-});
