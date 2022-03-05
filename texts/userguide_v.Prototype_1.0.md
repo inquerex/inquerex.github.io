@@ -2,9 +2,6 @@
 
 ![Inquerex](../images/inquerex100px_light.png "Inquerex")
 
-
-**Inquerex**
-
 Prototype 1.0
 
 I. Getting Oriented
