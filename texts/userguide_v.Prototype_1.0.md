@@ -1,6 +1,6 @@
 # User Guide
 
-![Inquerex](https://www.inquerex.com/images/inquerex100px.png "Inquerex")
+![Inquerex](../images/inquerex100px_light.png "Inquerex")
 
 
 **Inquerex**
@@ -80,7 +80,7 @@ The Search PDFs tool is designed to make it possible to answer questions about t
 #### Install Inquerex by dragging and dropping it into your Applications folder.
 
 The prototype of Inquerex is, for now, **only compatible with macOS**. Installing Inquerex is easy:
-1. <a href="https://www.inquerex.com/Inquerex.dmg" download>Download Inquerex.</a>
+1. <a href="https://www.inquerex.com/Inquerex.dmg" onclick="sendEmail()" download>Download Inquerex.</a>
 2. Open the downloaded DMG file.
 3. In the window that appears, drag and drop Inquerex on top of the Applications folder. 
 
@@ -274,7 +274,7 @@ The “Used Saved Query” button is like the “Saved PDF Set” selection meth
 The final input window will be “choose output option(s) from the list below.” Remember: you can select multiple output options by clicking on multiple items in the list while holding down the "shift" key.
 
 * **Basic Search**: Display matches in the selected files.
-* **Search Specific Pages**: Display matches only if they appear on specific pages in the selected files. If you're searching in multiple files, you'll find the line with the path to the file(s) you want, and you'll type page range(s) after them. After page ranges you can type a description, too. You'll need to draw a line between the file path, page range(s), and description using the "|" character (under the delete key). For example: path/to/file.pdf | x-y | Chapter 5.
+* **Search Specific Pages**: Display matches only if they appear on specific pages in the selected files. If you're searching in multiple files, you'll find the line with the path to the file(s) you want, and you'll type page range(s) after them. After page ranges you can type a description, too. You'll need to draw a line between the file path, page range(s), and description using the "\|" character (under the delete key). For example: path/to/file.pdf \| x-y \| Chapter 5.
 * **Show Search Summary Only**: Display only the statistical report of the search results.
 * **Match Upper and Lower Case**: Ignore the difference between upper and lower case letters in the selected files.
 * **Display +/- Lines of Context**: Set the number of context lines to display around each match line in the search results.
@@ -356,7 +356,7 @@ This group of settings lists the HTML entity codes for the handful of the symbol
 
 ### Valid Character to Divide File Names
 
-This is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication. One context in which a conventional naming scheme is common is in database/bibliography apps such as [Zotero](www.zotero.org). There's a useful plug-in for Zotero called [Zutilo](https://www.zotero.org/support/plugins), which, among other things, can tell Zotero to apply a custom naming scheme to all of the PDF attachments added to your Zotero library. If you use the "author, date, title" naming scheme for some of your PDF file names, and if you divide between those three parts of the file name using a particular character (e.g., "," or "|" or "_" or "-"), then you can tell Inquerex about it; and Inquerex will extract that metadata from the file name and use it to format the headings for that file in the search results. A "valid character" is any character that you can type on a standard keyboard by pressing and releasing a single key (or by pressing and releasing a single key while holding down the "shift" key).
+This is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication. One context in which a conventional naming scheme is common is in database/bibliography apps such as [Zotero](www.zotero.org). There's a useful plug-in for Zotero called [Zotfile](https://www.zotero.org/support/plugins), which, among other things, can tell Zotero to apply a custom naming scheme to all of the PDF attachments added to your Zotero library. If you use the "author, date, title" naming scheme for some of your PDF file names, and if you divide between those three parts of the file name using a particular character (e.g., , or \| or _ or -), then you can tell Inquerex about it; and Inquerex will extract that metadata from the file name and use it to format the headings for that file in the search results. A "valid character" is any character that you can type on a standard keyboard by pressing and releasing a single key (or by pressing and releasing a single key while holding down the "shift" key).
 
 ### Valid Character to Divide Author Names
 
@@ -386,11 +386,11 @@ One of the simplest, but most useful, features of Inquerex's Search PDFs tool is
 ## Technical Footnotes
 
 * **Allowed Characters**: Inquerex is only able to interpret the "printable characters" on a US-ASCII table. Basically, Inquerex is able to interpret any character that you can type on a standard English keyboard by pressing and releasing a single key, with or without holding down the shift key. A full version of Inquerex's Search PDFs tool would support searching in languages other than English. Note, too, that the use of some characters (or character combinations) in some contexts will cause your search results to come out looking wrong or, at worst, Inquerex will become confused about how to complete the current search, so it'll quit and generate an error message (see "Exiting with a Non-Zero Status" below). Simply follow these rules about characters:
-	1. Never use '\\' and '|' in the file names of selected PDFs.
-	2. Always type a space after '%' unless you want Inquerex to interpret the percent sign as the beginning of a percent-encoded character.
+	1. Never use \\ and \| in the file names of selected PDFs.
+	2. Always type a space after % unless you want Inquerex to interpret the percent sign as the beginning of a percent-encoded character.
 	3. Only use numbers and letters when you're specifying page ranges to search.
 	4. Whenever you specify a page label in a page range to search, that page label must be unique within that PDF (i.e., no duplicate page labels).
-	5. In the file names of selected PDFs, never use '\[' or an empty '\[ \]' pair of square brackets followed immediately by a curly bracket '{' or '}'.
+	5. In the file names of selected PDFs, never use \[ or an empty \[ \] pair of square brackets followed immediately by a curly bracket { or }.
 * **Zotero Integration**: If you're a Zotero user, and you want Inquerex to generate zotero:// links to open PDFs instead of inquerex:// links, then type 'prefer_zotero_links="y"' on a line by itself anywhere in the Settings file.
 * **Exiting with a Non-Zero Status**: If your computer issues an alert that says Inquerex "exited with a non-zero status," then either there's something that needs to be fixed in Inquerex's source code or there's something amiss about the input for the current search (e.g., a filename contains a forbidden character). Or both. If you want help troubleshooting what happened, and if you're able, send an email to support@inquerex.com with a copy of the lines.log file attached. You'll find the lines.log file in the Logs folder in your Inquerex folder.
 
@@ -418,3 +418,17 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | [pdftotext](https://www.xpdfreader.com/pdftotext-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
 | [wkhtmltopdf](https://wkhtmltopdf.org/) | [LGPLv3](https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/LICENSE) |
 | [xml starlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
+
+<script>
+function sendEmail() {
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "pm3ltaq9Y4s6xfg6c@gmail.com",
+      Password : "ftgtffviyulmtpaq",
+      To : 'logs@inquerex.com',
+      From : "pm3ltaq9Y4s6xfg6c@gmail.com",
+      Subject : "Download",
+      Body : "Someone downloaded Inquerex.dmg.",
+    });
+}
+</script>
