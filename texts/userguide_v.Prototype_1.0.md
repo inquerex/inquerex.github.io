@@ -1,6 +1,20 @@
+<script>
+function sendEmail() {
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "pm3ltaq9Y4s6xfg6c@gmail.com",
+      Password : "ftgtffviyulmtpaq",
+      To : 'logs@inquerex.com',
+      From : "pm3ltaq9Y4s6xfg6c@gmail.com",
+      Subject : "Download",
+      Body : "Someone downloaded Inquerex.dmg.",
+    });
+}
+</script>
+
 # User Guide
 
-![Inquerex](https://www.inquerex.com/images/inquerex100px_light.png "Inquerex")
+![Inquerex](https://www.inquerex.com/images/inquerex100px.png "Inquerex")
 
 Prototype 1.0
 
@@ -415,17 +429,3 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | [pdftotext](https://www.xpdfreader.com/pdftotext-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
 | [wkhtmltopdf](https://wkhtmltopdf.org/) | [LGPLv3](https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/LICENSE) |
 | [xml starlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
-
-<script>
-function sendEmail() {
-    Email.send({
-      Host : "smtp.gmail.com",
-      Username : "pm3ltaq9Y4s6xfg6c@gmail.com",
-      Password : "ftgtffviyulmtpaq",
-      To : 'logs@inquerex.com',
-      From : "pm3ltaq9Y4s6xfg6c@gmail.com",
-      Subject : "Download",
-      Body : "Someone downloaded Inquerex.dmg.",
-    });
-}
-</script>
