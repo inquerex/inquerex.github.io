@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inquerex</title>
+    <link href="images/inquerex100px.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="splash.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="splash.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div><a href="https://www.inquerex.com"><img src="images/inquerex500px.png" alt="Inquerex"></a></div>
+        <div><img src='images/navIcon.png' onclick="toggleNav()" alt="Navigation"></div>
+    </section>
+    <section id="navButtons" style="visibility: hidden">
+        <h2><a href='features.html'>Features</a></h2>
+        <h2><a href='mailto:feedback@inquerex.com'>Feedback</a></h2>
+        <h2><a href='userguide.html'>User Guide</a></h2>
+    </section>
+    <section id="mainText">
+        <div>
+            <span id="name"><h1>inquerex</h1></span>
+        </div>
+        <div>
+            <span id="tag"><h3>digital tools for critical inquiry</h3></span>
+        </div>
+    </section>
+    <section id="mainButton">
+        <div id="download">
+            <a href="inquerex.dmg" onclick="sendEmail()" download><img src="images/download.png" alt="Download"></a>
+        </div>
+    </section>
+    <section>
+        <span id="div"></span>
+        <span id="change"></span>
+    </section>
+</body>
+</html>
