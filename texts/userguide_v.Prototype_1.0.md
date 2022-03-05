@@ -1,17 +1,3 @@
-<script>
-function sendEmail() {
-    Email.send({
-      Host : "smtp.gmail.com",
-      Username : "pm3ltaq9Y4s6xfg6c@gmail.com",
-      Password : "ftgtffviyulmtpaq",
-      To : 'logs@inquerex.com',
-      From : "pm3ltaq9Y4s6xfg6c@gmail.com",
-      Subject : "Download",
-      Body : "Someone downloaded Inquerex.dmg.",
-    });
-}
-</script>
-
 # User Guide
 
 ![Inquerex](https://www.inquerex.com/images/inquerex100px.png "Inquerex")
@@ -89,6 +75,20 @@ The Search PDFs tool is designed to make it possible to answer questions about t
 ## Installation
 
 #### Install Inquerex by dragging and dropping it into your Applications folder.
+
+<script>
+function sendEmail() {
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "pm3ltaq9Y4s6xfg6c@gmail.com",
+      Password : "ftgtffviyulmtpaq",
+      To : 'logs@inquerex.com',
+      From : "pm3ltaq9Y4s6xfg6c@gmail.com",
+      Subject : "Download",
+      Body : "Someone downloaded Inquerex.dmg.",
+    });
+}
+</script>
 
 The prototype of Inquerex is, for now, **only compatible with macOS**. Installing Inquerex is easy:
 1. <a href="https://www.inquerex.com/Inquerex.dmg" onclick="sendEmail()" download>Download Inquerex.</a>
