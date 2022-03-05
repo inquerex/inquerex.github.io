@@ -77,7 +77,7 @@ The Search PDFs tool is designed to make it possible to answer questions about t
 #### Install Inquerex by dragging and dropping it into your Applications folder.
 
 The prototype of Inquerex is, for now, **only compatible with macOS**. Installing Inquerex is easy:
-1. <a href="https://www.inquerex.com/Inquerex.dmg" onclick="sendEmail()" download>Download Inquerex.</a>
+1. Download Inquerex on <a href="https://www.inquerex.com/splash.html">this page</a>.
 2. Open the downloaded DMG file.
 3. In the window that appears, drag and drop Inquerex on top of the Applications folder. 
 
@@ -415,17 +415,3 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | [pdftotext](https://www.xpdfreader.com/pdftotext-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
 | [wkhtmltopdf](https://wkhtmltopdf.org/) | [LGPLv3](https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/LICENSE) |
 | [xml starlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
-
-<script>
-function sendEmail() {
-    Email.send({
-      Host : "smtp.gmail.com",
-      Username : "pm3ltaq9Y4s6xfg6c@gmail.com",
-      Password : "ftgtffviyulmtpaq",
-      To : 'logs@inquerex.com',
-      From : "pm3ltaq9Y4s6xfg6c@gmail.com",
-      Subject : "Download",
-      Body : "Someone downloaded Inquerex.dmg.",
-    });
-}
-</script>
