@@ -1,6 +1,6 @@
-# User Guide
-
 ![Inquerex](https://www.inquerex.com/images/inquerex100px.png "Inquerex")
+
+# User Guide
 
 Prototype 1.0
 
