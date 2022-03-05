@@ -57,7 +57,7 @@ Critical inquiry happens when we ask questions about the standards to which we h
 
 ## Search PDFs
 
-Inquerex is a collection of tools. Search PDFs is one of those tools.
+Inquerex is a set of tools. Search PDFs is one of those tools.
 
 ## Paradigmatic Uses
 
@@ -388,7 +388,7 @@ One of the simplest, but most useful, features of Inquerex's Search PDFs tool is
 	3. Only use numbers and letters when you're specifying page ranges to search.
 	4. Whenever you specify a page label in a page range to search, that page label must be unique within that PDF (i.e., no duplicate page labels).
 	5. In the file names of selected PDFs, never use \[ or an empty \[ \] pair of square brackets followed immediately by a curly bracket { or }.
-* **Zotero Integration**: If you're a Zotero user, and you want Inquerex to generate zotero:// links to open PDFs instead of inquerex:// links, then type 'prefer_zotero_links="y"' on a line by itself anywhere in the Settings file.
+* **Zotero Integration**: If you're a Zotero user, and you want Inquerex to generate zotero://open-pdf links to open PDFs instead of inquerex:// links, then type 'prefer_zotero_links="y"' on a line by itself anywhere in the Settings file. Note that there's a significant limitation with zotero://open-pdf links, however: Zotero can only open PDFs to pages that have integers as page labels (e.g., 1, 2, 3, etc.). Unless you edit Zotero's code, it can't open PDFs to pages with any other page label type (e.g, "xi" or "Appendix I"). In contrast, Inquerex can open a PDF to any page with any page label so long as it contains allowed characters only (see "Allowed Characters" above).
 * **Exiting with a Non-Zero Status**: If your computer issues an alert that says Inquerex "exited with a non-zero status," then either there's something that needs to be fixed in Inquerex's source code or there's something amiss about the input for the current search (e.g., a filename contains a forbidden character). Or both. If you want help troubleshooting what happened, and if you're able, send an email to support@inquerex.com with a copy of the lines.log file attached. You'll find the lines.log file in the Logs folder in your Inquerex folder.
 
 ## End-User License Agreement
