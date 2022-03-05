@@ -1,3 +1,5 @@
+<body style="color:#171717; font-family: 'Futura'";>
+
 # User Guide
 
 ![Inquerex](https://www.inquerex.com/images/inquerex100px.png "Inquerex")
