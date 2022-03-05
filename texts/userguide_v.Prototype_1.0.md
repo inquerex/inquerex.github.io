@@ -1,4 +1,3 @@
-<html>
 <body style="color:#171717; font-family: 'Futura'";>
 
 # User Guide
@@ -423,4 +422,3 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | [xml starlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
 
 </body>
-</html>
