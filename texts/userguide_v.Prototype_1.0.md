@@ -1,6 +1,6 @@
 # User Guide
 
-![Inquerex](../images/inquerex100px_light.png "Inquerex")
+![Inquerex](https://www.inquerex.com/images/inquerex100px_light.png "Inquerex")
 
 Prototype 1.0
 
