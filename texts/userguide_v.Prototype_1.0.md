@@ -34,9 +34,9 @@ III. Beyond Searches
 ### The Basics
 
 The interface for Inquerex's Search PDFs tool is dialogical: a series of pop-up windows that ask you for input. Basically, you'll go through three windows:
-1. Select PDFs to search.
-2. Enter a search query.
-3. Choose output options. 
+1. [Select PDFs to search](#selecting-pdfs-to-search).
+2. [Enter a search query](#entering-a-search-query).
+3. [Choose output options](#choosing-output-options). 
 
 When the search is complete, you'll see a message on the screen letting you know; and, in that message, you can click "View Results" to open the search results in your default PDF viewer. At the top of the PDF, you'll see a list of the files you searched. Click them to navigate the results. And click page names/numbers in the margins to open particular pdfs to particular pages.
 
@@ -44,10 +44,10 @@ When the search is complete, you'll see a message on the screen letting you know
 
 1. Hold down the "shift" key while you click on items in a list to **select multiple items**;
 2. **Select PDFs to search** by right clicking on them and choosing "Inquerex" under "Open with...";
-3. **Enter all your input in a program file** and put it in the Active Programs folder to run it the next time you launch Inquerex;
-4. **Copy links to open PDFs** by right clicking on the PDFs and looking under the “Services” menu (then paste the links anywhere);
-5. If those links open as web pages, then **make Inquerex your default web browser** in "System Preferences," under "General."
-6. Use Inquerex's **logical shorthand** in your search queries to set basic logical relationships (and, or, not) among search terms.
+3. **Enter all your input in a program file** and put it in [the Active Programs folder](#your-inquerex-folder) to [run it the next time you launch Inquerex](#writing-your-own-programs);
+4. **Copy links to open PDFs** by right clicking on the PDFs and looking under [the “Services” menu](#making-your-own-links) (then paste the links anywhere);
+5. If those links open web pages, instead of PDFs, then **make Inquerex your default web browser** in "System Preferences," under "General."
+6. Set **context conditions** in your search queries using [the simple syntax described below](#how-to-craft-a-search-query).
 
 ## Why Inquerex?
 
@@ -63,7 +63,7 @@ Inquerex is a set of tools. Search PDFs is one of those tools.
 
 #### The Search PDFs tool is for researchers, teachers, journalists, and others who want to find words in PDFs quickly, easily, and reliably.
 
->You're a **researcher** doing qualitative interviews. You have them transcribed in PDFs on your computer. You want to analyze key words and phrases, quickly, in context. But it's hard to keep a reliable index by hand, even when you use your PDF viewer's "search" tool. Plus, you find yourself focusing, all too easily, on some words and phrases over others. So you use Inquerex to create color-coded statistics for you, along with links to open particular pages. Now you can code patterns systematically, and strategically.
+>You're a **researcher** doing qualitative interviews. You have them transcribed in PDFs on your computer. You want to analyze key words and phrases, quickly, in context. But it's hard to keep a reliable index by hand, even when you use your PDF viewer's "search" tool. Plus, you find yourself focusing, all too easily, on some patterns of words and phrases over others. So you use Inquerex to create color-coded statistics for you, along with links to open particular pages. Now you can code interviews more systematically and strategically.
 
 >You're a **teacher** writing a lesson plan on a handful of authors. You've got a bunch of texts written by them, saved as PDFs in multiple folders on your computer. You want to know how those authors interpreted one another because it would clarify, for your students, what makes them similar/different. But you know these authors's references to one another might be buried in obscure places in the texts. So you use Inquerex to find the references quickly. Granted, your PDF editor can search for words in a single PDF. And it can search for words in all of the PDFs in a single folder. But you want to search in multiple PDFs located in multiple folders on your computer. Inquerex makes this easy.
 
@@ -77,7 +77,7 @@ The Search PDFs tool is designed to make it possible to answer questions about t
 #### Install Inquerex by dragging and dropping it into your Applications folder.
 
 The prototype of Inquerex is, for now, **only compatible with macOS**. Installing Inquerex is easy:
-1. Download Inquerex on <a href="https://www.inquerex.com/splash.html">this page</a>.
+1. Download Inquerex on <a href="https://www.inquerex.com/">this page</a>.
 2. Open the downloaded DMG file.
 3. In the window that appears, drag and drop Inquerex on top of the Applications folder. 
 
@@ -87,10 +87,10 @@ As you use Inquerex, your computer will ask if you want to give Inquerex various
 
 #### You can select PDFs anywhere on your computer using multiple methods.
 
-To begin a search, click "Start" on the welcome window. The next window will prompt you to "choose method(s) for selecting pdfs to search." You can select PDFs in multiple ways. Click on the method(s) you want to use in the list. If you hold down the shift key while you click on items in the list, then you can select multiple methods at once: i.e., you can use multiple means to select the PDFs you want to search. Each method will add the selected PDFs to the search queue.
+To begin a search, click "Start" on the welcome window. The next window will prompt you to "choose method(s) for selecting pdfs to search." You can select PDFs in multiple ways. Click on the method(s) you want to use in the list. If you hold down the shift key while you click on items in the list, then you can select multiple methods at once: i.e., you can use multiple means to select the PDFs you want to search. Each method will add the selected PDFs to the search set.
 
 * **Last Search Set**: this will select all of the PDFs used in your most recent search, if a past search exists.
-* **Clipboard**: this will import file paths from the clipboard; e.g., if you're a [Zotero](www.zotero.org) user, you can copy attachment file paths to the clipboard using the [Zutilo](https://www.zotero.org/support/plugins) plugin.
+* **Clipboard**: this will select PDFs by reading text on your computer's [clipboard](https://support.apple.com/en-us/HT209651) if that text is a list of file paths to PDFs; e.g., if you're a [Zotero](www.zotero.org) user, you can copy attachment file paths to the clipboard using the [Zutilo](https://www.zotero.org/support/plugins) plugin.
 * **Saved Set(s)**: this will prompt you to select a .txt file containing a list of file paths; note that you can find every set of PDFs you've ever searched in the Past PDF Sets folder.
 * **Selected File(s)**: this will prompt you to select PDF files on your computer; click "Cancel" when you're done selecting files.
 * **Selected Folder(s)**: this will prompt you to select folders on your computer (and it'll select all of the PDFs in those folders); click "Cancel" when you're done selecting folders.
@@ -104,9 +104,9 @@ To begin a search, click "Start" on the welcome window. The next window will pro
 
 ### How to Craft a Search Query
 
-In the next window, you’ll be asked to type a search query. A "search query" is a chunk of text that your computer uses to find things for you. You probably write search queries all the time when you browse the internet. Maybe you go to a search engine website (e.g., Google, DuckDuckGo, etc.) and type some text inside a box there. Or maybe you type some text in the long, horizontal box at the top of your web browser. In both cases, your computer uses the words you type, with the help of a search engine, to find webpages containing some or all of those words.
+A "search query" is a line of text that your computer uses to find things for you. You probably write search queries all the time when you browse the internet. Maybe you go to a search engine website (e.g., Google, DuckDuckGo, etc.) and type some text inside a box there. Or maybe you type some text in the long, horizontal box at the top of your web browser. In both cases, your computer uses the words you type, with the help of a search engine, to find webpages containing some or all of those words.
 
-Inquerex's Search PDFs tool is like a search engine for finding particular pages in pdfs on your computer. You'll start by selecting the pdf files you want to search. Then you'll enter a search query. Unlike search queries on the internet, however, Inquerex's search queries will find only those pdf pages containing an **exact match** of the word or phrase you entered. You'll use the building blocks below to craft a query that'll find pages containing matches, where a "match" is any word or phrase that satisfies every condition in your query. As you'll see, below, your query can contain some complex conditions.
+**Inquerex's Search PDFs tool is like a search engine for finding particular pages in pdfs on your computer.** You'll start by selecting the pdf files you want to search. Then you'll enter a search query. Unlike search queries on the internet, however, Inquerex's search queries will find only those pdf pages containing an **exact match**. You'll use the building blocks below to craft a query that'll find pages containing exact matches, where an "exact match" is any word or phrase that satisfies every condition in your query. As you'll see, below, your query can contain some complex conditions.
 
 ### Building Blocks
 
@@ -264,7 +264,13 @@ You your best thing, Sethe. <span style="background-color: #B8860B"><span style=
 
 ### Using a Saved Query
 
-The “Used Saved Query” button is like the “Saved PDF Set” selection method (see above). If you write a complex search query, you might want to save it for future use. Inquerex saves all of your past queries in your Past Queries folder. So, if you want, you can copy .txt files from your Past Queries folder into your Saved Queries folder and give them memorable names. Or you can save your queries in .txt files, yourself, and put those files in your Saved Queries folder (or anywhere else on your computer). Or you can tell Inquerex to prompt you to name your queries (see Settings below), in which case Inquerex will save your queries, by name, in the Saved Queries folder. If all of this is too complicated, you could copy and paste your queries into a single document that you store somewhere on your computer; and you can copy and paste past queries into the pop-up window yourself. You might find this to be easier, anyway. That’s why the “prompt user to name queries” is turned off, by default, in the Settings.
+The “Used Saved Query” button is like the “Saved PDF Set” selection method (see above). If you write a complex search query, you might want to save it for future use. Inquerex saves all of your past queries in your Past Queries folder. So if you want...
+
+* You can copy .txt files from your Past Queries folder into your Saved Queries folder and give them memorable names.
+* Or you can save your queries in .txt files, yourself, and put those files in your Saved Queries folder (or anywhere else on your computer). 
+* Or you can tell Inquerex to prompt you to name your queries (see [Settings](#settings) below), in which case Inquerex will save your queries, by name, in the Saved Queries folder.
+
+If all of this is too complicated, you could copy and paste your queries into a single document that you store somewhere on your computer; and you can copy and paste past queries into the pop-up window yourself. You might find this to be easier, anyway. That’s why the “prompt user to name queries” is turned off, by default, in the Settings.
 
 ## Choosing Output Options
 
@@ -290,7 +296,9 @@ The final input window will be “choose output option(s) from the list below.�
 
 ## Viewing Search Results
 
-While Inquerex is performing your search, you should see a white dot underneath the app icon in the dock. There is no real-time progress indicator. When the search is complete, a pop-up window will appear to let you know. In that window, you can click "View Results" to open the search results in your default PDF viewer. When you launch Inquerex for the first time, after you accept the End-User License Agreement and click "Start," Inquerex will ask you where you want to save your search results files. The default location is the Desktop. Wherever you choose to save your search results, that's where you'll find them when the search is complete. You can change the file naming conventions for search results in the settings.txt file (see below). Your search results PDF files can be annotated. And you can search them, too.
+While Inquerex is performing your search, you should see a white dot underneath the app icon in the dock. There is no real-time progress indicator. When the search is complete, a pop-up window will appear to let you know. In that window, you can click "View Results" to open the search results in your default PDF viewer. 
+
+When you launch Inquerex for the first time, after you accept the [End-User License Agreement](#end-user-license-agreement) and click "Start," Inquerex will ask you where you want to save your search results files. The default location is the Desktop. Wherever you choose to save your search results, that's where you'll find them when the search is complete. You can change the file naming conventions for search results in the settings.txt file (see [Settings](#settings) below). Note that your search results can be annotated. And you can search them, too.
 
 ## Your Inquerex Folder
 
@@ -341,48 +349,64 @@ You can change almost all of the settings in Inquerex. To do so, open the settin
 
 ### Default Values for Metrics
 
-This group of settings lists the default values that Inquerex will suggest for *n* when you enter values for *n* in the pop-up window interface. If you find that the pop-up window interace for setting metrics is too burdensome, and you want to speed up the process a little bit, then you can set the default values that Inquerex will suggest to you in the pop-up windows for setting metrics. Setting a default value for a metric is different than turning that metric on in your searches. You'll still have to turn a metric on, in the output options, every time you do a search, no matter what its "default value" might be. In other words, setting a default value for a metric that's greater than 0 isn't the same thing as telling Inquerex to use that metric in all of its searches, by default. It isn't possible to tell Inquerex to do that in this prototype version. If that's what you want to do, then you should skip Inquerex's pop-up window interface altogether by using program files (see below). Once you learn how to write a program file, you'll be able to turn metrics on and off, and set values for them, with ease. And if you want some/all metrics to be "on" in all of your searches, you can edit the template program file accordingly, and then simply copy and paste that template file every time you create a new program.
+**This group of settings lists the default values that Inquerex will suggest for *n* when you enter values for *n* in the pop-up window interface.** If you find that the pop-up window interace for setting metrics is too burdensome, and you want to speed up the process a little bit, then you can set the default values that Inquerex will suggest to you in the pop-up windows for setting metrics.
+
+Note that setting a default value for a metric is different than turning that metric on in your searches. You'll still have to turn a metric on, in the output options, every time you do a search, no matter what its "default value" might be. In other words, setting a default value for a metric that's greater than 0 isn't the same thing as telling Inquerex to use that metric in all of its searches, by default. It isn't possible to tell Inquerex to do that in this prototype version.
+
+If that's what you want to do, then you should skip Inquerex's pop-up window interface altogether by using program files (see [Writing Your Own Programs](#writing-your-own-programs) below). Once you learn how to write a program file, you'll be able to turn metrics on and off, and set values for them, with ease. And if you want some/all metrics to be "on" in all of your searches, you can edit the template program file accordingly, and then simply copy and paste that template file every time you create a new program.
 
 ### HTML Color Codes for the Final Output
 
-This group of settings lists the hexadecimal color codes for everything in the search results that has (or would have) a particular color. You can explore these color codes online (e.g., at [this webpage](https://html-color.codes/)). A hexadecimal color code tells the computer how much red, green, and blue to use in a given color. The six characters that follow the # symbol contain three pairs, and they correspond with the values for red, green, and blue. If you want to change any/all of the colors that Inquerex uses in the search results, you can do so in this group of settings. The "default color" refers to the default color of all text. The "anchor" color refers to the color of the anchor text for navigation links internal to the search results file. That's why, by default, they're the same color as the background color, to hide them. All of the other color variable names should be easy enough to interpret, esp. with some experimentation.
+**This group of settings lists the hexadecimal color codes for everything in the search results that has (or would have) a particular color.** You can explore these color codes online (e.g., at [this webpage](https://html-color.codes/)). 
+
+A hexadecimal color code tells the computer how much red, green, and blue to use in a given color. The six characters that follow the # symbol contain three pairs, and they correspond with the values for red, green, and blue. If you want to change any/all of the colors that Inquerex uses in the search results, you can do so in this group of settings. 
+
+The "default color" refers to the default color of all text. The "anchor" color refers to the color of the anchor text for navigation links internal to the search results file. That's why, by default, they're the same color as the background color, to hide them. All of the other color variable names should be easy enough to interpret, esp. with some experimentation.
 
 ### HTML Entity Codes for the Final Output
 
-This group of settings lists the HTML entity codes for the handful of the symbols that appear in the search results file. An HTML entity code is a special combination of characters used to represent symbols in the webpage programming language known as HTML. To see a list of available HTML entities (and corresponding codes), visit [this webpage](https://www.w3schools.com/charsets/ref_html_entities_4.asp). That webpage will list three different codes for each symbol; you can use any of them. **But omit the semicolon at the end.** The semicolon will cause Inquerex to misinterpret the settings file.
+**This group of settings lists the HTML entity codes for the handful of the symbols that appear in the search results file.**
+
+An HTML entity code is a special combination of characters used to represent symbols in the webpage programming language known as HTML. To see a list of available HTML entities (and corresponding codes), visit [this webpage](https://www.w3schools.com/charsets/ref_html_entities_4.asp). That webpage will list three different codes for each symbol; you can use any of them. **But omit the semicolon at the end.** The semicolon will cause Inquerex to misinterpret the settings file.
 
 ### Valid Character to Divide File Names
 
-This is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication. One context in which a conventional naming scheme is common is in database/bibliography apps such as [Zotero](www.zotero.org). There's a useful plug-in for Zotero called [Zotfile](https://www.zotero.org/support/plugins), which, among other things, can tell Zotero to apply a custom naming scheme to all of the PDF attachments added to your Zotero library. If you use the "author, date, title" naming scheme for some of your PDF file names, and if you divide between those three parts of the file name using a particular character (e.g., \| or _ or , or -), then you can tell Inquerex about it; and Inquerex will extract that metadata from the file name and use it to format the headings for that file in the search results. A "valid character" is any character that you can type on a standard keyboard by pressing and releasing a single key (or by pressing and releasing a single key while holding down the "shift" key).
+**This is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication.** 
+
+One context in which a conventional naming scheme is common is in database/bibliography apps such as [Zotero](www.zotero.org). There's a useful plug-in for Zotero called [Zotfile](https://www.zotero.org/support/plugins), which, among other things, can tell Zotero to apply a custom naming scheme to all of the PDF attachments added to your Zotero library. If you use the "author, date, title" naming scheme for some of your PDF file names, and if you divide between those three parts of the file name using a particular character (e.g., \| or _ or , or -), then you can tell Inquerex about it; and Inquerex will extract that metadata from the file name and use it to format the headings for that file in the search results. A "valid character" is any character that you can type on a standard keyboard by pressing and releasing a single key (or by pressing and releasing a single key while holding down the "shift" key).
 
 ### Valid Character to Divide Author Names
 
-This, too, is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication (see the previous setting description). If you use a conventional naming scheme in which your PDF file names begin with the names of the author(s), and if you use a particular character to demarcate the names of multiple authors, then you can tell Inquerex about it. Inquerex will look for that particular character in the first part of the file name, and it will separate the names of the authors in the search results.
+**This, too, is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication (see [the previous setting description](#valid-character-to-divide-file-names)).** If you use a conventional naming scheme in which your PDF file names begin with the names of the author(s), and if you use a particular character to demarcate the names of multiple authors, then you can tell Inquerex about it. Inquerex will look for that particular character in the first part of the file name, and it will separate the names of the authors in the search results.
 
 ## Writing Your Own Programs
 
-Once you've run a few searches, you might find that you want to create a search "program" file. A search program file is a .txt file containing a constellation of variables. It contains all of the variables that the user would otherwise set, bit by bit, through the pop-up window interface. A program file contains all of that input, and Inquerex can load it all at once. If you use a program file, you skip the pop-up window interface altogether.
+Once you've run a few searches, you might find that you want to create a search "program file." A search program file is a .txt file containing a constellation of variables. It contains all of the variables that the user would otherwise set, bit by bit, through the pop-up window interface. A program file contains all of that input, and Inquerex can load it all at once. If you use a program file, you skip the pop-up window interface altogether.
 
 You can create a new program by selecting "New Program" on the "choose method(s) for selecting PDFs to search" window. When you do that, for the first time, Inquerex will create a file in your Inquerex folder called template\_program.txt. In the future, you can simply copy that file (right click and select "Copy"), edit it, save it, and (if you like) put it in the Saved Programs folder.
 
 When you open a program file, your computer will probably open it in an app called Text Editor. It's a simple app for editing text. It's perfect for this purpose. But the window might be too small for you to see all the variables in clear columns and rows. Try clicking on one of the window corners and dragging it to a different location on the screen to make the window big enough so that the variables line up in a way that's easy to read (and edit). If you want, you can actually change the default window size for Text Edit: click the words "Text Edit" in the top left corner of your screen, and select "Preferences," then find "Window Size" and change the values for width and height. 
 
-Once you enter the values you want in the program file, save it, and move it to the "Active Programs" folder in your Inquerex folder. Whenever you launch Inquerex, if it finds one or more .txt files in the Active Program" folder, it'll try to perform a search using the variable values from each program file as input, one program file at a time. Imagine that you have a series of searches you want to perform on a large number of pdf files. You could write a program file for each search, put all the program files into the Active Programs directory, launch the app, and then run them overnight.
+Once you enter the values you want in the program file, save it, and move it to the Active Programs folder in [your Inquerex folder](#your-inquerex-folder). Whenever you launch Inquerex, if it finds one or more .txt files in the Active Program" folder, it'll try to perform a search using the variable values from each program file as input, one program file at a time. Imagine that you have a series of searches you want to perform on a large number of pdf files. You could write a program file for each search, put all the program files into the Active Programs directory, launch the app, and then run them overnight.
 
 A few tips and tricks for writing program files:
 
 1. You can **leave the query name and pdf set name variables blank** if you want.
 2. **Don't worry too much about making your input variables consistent** with one another. Inquerex will reconcile inconsistent variable values automatically. Check the "input" log to see which variables (if any) Inquerex changed.
 3. You can **drag and drop PDF files from a Finder window** onto the Text Editor window, under "program_pdf_paths" and Text Edit will generate the file paths to those files for you, automatically. With a little practice, this is one of the easiest ways to select PDFs to search. Note that there's no need to enclose the file paths within quotation marks.
-4. If you have a program file open in Text Editor, and you run it, and then you edit it, your computer will issue an alert: "The document could not be saved. The file has been changed by another application." **Click "Save Anyway" and proceed.** Your computer is just letting you know that Inquerex modified your program file a little bit. So it's letting you know that you're looking at an earlier version of the file. That's ok. Just click "Save Anyway." The only thing Inquerex did was to enclose some/all of the file paths to your PDFs inside double quotes. And Inquerex will do that for you, again, without skipping a beat. So discard Inquerex's modifications to the file by clicking "Save Anyway."
+4. If you have a program file open in Text Editor, and you run it, and then you edit it, your computer will issue an alert: "The document could not be saved. The file has been changed by another application." **Click "Save Anyway."** Your computer is letting you know that Inquerex modified your program file. But the modification is trivial. Just click "Save Anyway."
 
 ## Making Your Own Links
 
-One of the simplest, but most useful, features of Inquerex's Search PDFs tool is its ability to open particular PDFs to particular pages using hyperlinks. This feature might be useful to you even if you never perform a single search in a single PDF. For example, if you're using an app on your computer to take notes on PDFs that you're reading, and you want to create a link from your notes to a particular page in a particular PDF (so you can retrace your steps later), then you can create that link, quickly and easily, and paste it into your notes. You can create two different types of links: one to open a PDF, and another to open a PDF to a particular page. To create a link, right click on one or more selected PDFs, hover over the "Services" menu, and then select "Copy Inquerex Link (Open PDF)" or "Copy Inquerex Link (Go to Page)." If you selected the latter link ("Go to Page"), then, for each of the selected PDFs, Inquerex will ask you which page you want the link to open. Once you're done, the link(s) will be copied to your computer's clipboard. Your clipboard is a place where your comptuer can "copy" some data for you, temporarily, so that you can then "paste" it somewhere else. Anywhere on your computer where you can type text, you should be able to right click and select "Paste" to enter the data on the clipboard there. For example, you could paste a link into Scrivener, Simplenote, Evernote, Endnote, Zotero, Todoist, and so on.
+One of the simplest, but most useful, features of Inquerex's Search PDFs tool is its ability to open particular PDFs to particular pages using hyperlinks. This feature might be useful to you even if you never perform a single search in a single PDF. For example, if you're using an app on your computer to take notes on PDFs that you're reading, and you want to create a link from your notes to a particular page in a particular PDF (so you can retrace your steps later), then you can create that link, quickly and easily, and paste it into your notes. 
+
+You can create two different types of links: one to open a PDF, and another to open a PDF to a particular page. To create a link, right click on one or more selected PDFs, hover over the "Services" menu, and then select "Copy Inquerex Link (Open PDF)" or "Copy Inquerex Link (Go to Page)." If you selected the latter link ("Go to Page"), then, for each of the selected PDFs, Inquerex will ask you which page you want the link to open. Once you're done, the link(s) will be copied to [your computer's clipboard](https://support.apple.com/en-us/HT209651). 
+
+Your clipboard is a place where your comptuer can "copy" some data for you, temporarily, so that you can then "paste" it somewhere else. Anywhere on your computer where you can type text, you should be able to right click and select "Paste" to enter the data on the clipboard there. For example, you could paste a link into Scrivener, Simplenote, Evernote, Endnote, Zotero, Todoist, and so on.
 
 ## Technical Footnotes
 
-* **Allowed Characters**: Inquerex is only able to interpret the "printable characters" on a US-ASCII table. Basically, Inquerex is able to interpret any character that you can type on a standard English keyboard by pressing and releasing a single key, with or without holding down the shift key. A full version of Inquerex's Search PDFs tool would support searching in languages other than English. Note, too, that the use of some characters (or character combinations) in some contexts will cause your search results to come out looking wrong or, at worst, Inquerex will become confused about how to complete the current search, so it'll quit and generate an error message (see "Exiting with a Non-Zero Status" below). Simply follow these rules about characters:
+* **Allowed Characters**: Inquerex is only able to interpret the "printable characters" on a US-ASCII table. Basically, Inquerex is able to interpret any character that you can type on a standard English keyboard by pressing and releasing a single key, with or without holding down the shift key. A full version of Inquerex's Search PDFs tool would support searching in languages other than English (and more sophisticated support for mathematical and scientific notations). Note, too, that the use of some characters (or character combinations) in some contexts will cause your search results to come out looking wrong or, at worst, Inquerex will become confused about how to complete the current search, so it'll quit and generate an error message (see "Exiting with a Non-Zero Status" below). Simply follow these rules about characters:
 	1. Never use \\ and \| in the file names of selected PDFs.
 	2. Always type a space after % unless you want Inquerex to interpret the percent sign as the beginning of a percent-encoded character.
 	3. Only use numbers and letters when you're specifying page ranges to search.
