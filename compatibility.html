@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inquerex</title>
+    <title>Inquerex : Features</title>
     <link href="images/inquerex100px.png" rel="icon" type="image/png" />
     <link rel="stylesheet" href="splash.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -22,16 +22,30 @@
     </section>
     <section id="mainText">
         <div>
-            <span id="name"><h1>inquerex</h1></span>
+            <span id="title"><h6>Compatibility</h6></span>
         </div>
         <div>
-            <span id="tag"><h3>digital tools for critical inquiry</h3></span>
+            <center><span id="version">Prototype 1.0</span></center>
+        </div>
+        <br>
+        <div>
+            <span id="subtitle"><h5>Inquerex is <u><strong>Mac only</strong></u> for now.</h5></span>
+        </div>
+        <div class="paragraph">
+            <p>It looks like you aren't on a Mac.<br>Inquerex runs on macOS only.<br>Still want to download it?</p>
         </div>
     </section>
-    <section id="mainButton">
+    <section id="confirmButtons">
+        <div>
+            <a href="index.html"><img src="images/no.png" alt="No"></a>
+        </div>
+        <div style="visibility:hidden">
+            <img src="images/yes.png">
+        </div>
         <div id="download">
-            <a href="Inquerex.dmg" onclick="checkOS()"><img src="images/download.png" alt="Download"></a>
+            <a href="Inquerex.dmg" onclick="sendEmail()" download><img src="images/yes.png" alt="Yes"></a>
         </div>
     </section>
+    <br><br><br>
 </body>
 </html>

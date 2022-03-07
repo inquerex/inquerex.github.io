@@ -59,6 +59,7 @@ section {
     flex-flow: column;
     justify-content: center;
     white-space: nowrap;
+    margin-top: 5%;
 }
 
 #mainText div {
@@ -72,6 +73,16 @@ section {
 
 #mainButton img {
     width: 30vmax;
+}
+
+#confirmButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vmax;
+}
+
+#confirmButtons img {
+    width: 12vmax;
 }
 
 #version {
@@ -164,6 +175,16 @@ h5 {
     font-size: 3vmax;
     font-style: italic;
     color: #B8860B;
+    margin-bottom: 0;
+    text-decoration: strong;
+}
+
+h6 {
+    text-align: center;
+    font-family: Futura;
+    font-size: 5vmax;
+    color: #ffffff;
+    margin-top: 0;
     margin-bottom: 0;
     text-decoration: strong;
 }
