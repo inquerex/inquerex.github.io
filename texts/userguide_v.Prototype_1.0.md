@@ -406,9 +406,11 @@ A few tips and tricks for writing program files:
 
 One of the simplest, but most useful, features of Inquerex's Search PDFs tool is its ability to open particular PDFs to particular pages using hyperlinks. This feature might be useful to you even if you never perform a single search in a single PDF. For example, if you're using an app on your computer to take notes on PDFs that you're reading, and you want to create a link from your notes to a particular page in a particular PDF (so you can retrace your steps later), then you can create that link, quickly and easily, and paste it into your notes. 
 
-You can create two different types of links: one to open a PDF, and another to open a PDF to a particular page. To create a link, right click on one or more selected PDFs, hover over the "Services" menu, and then select "Copy Inquerex Link (Open PDF)" or "Copy Inquerex Link (Go to Page)." If you selected the latter link ("Go to Page"), then, for each of the selected PDFs, Inquerex will ask you which page you want the link to open. Once you're done, the link(s) will be copied to [your computer's clipboard](https://support.apple.com/en-us/HT209651). 
+To create a link, right click on one or more selected PDFs, hover over the "Services" menu that appears, and then select "Copy Inquerex Link(s)." For each link, Inquerex will ask you which page you want the link to open. Once you're done, the link(s) will be copied to [your computer's clipboard](https://support.apple.com/en-us/HT209651). 
 
 Your clipboard is a place where your comptuer can "copy" some data for you, temporarily, so that you can then "paste" it somewhere else. Anywhere on your computer where you can type text, you should be able to right click and select "Paste" to enter the data on the clipboard there. For example, you could paste a link into Scrivener, Simplenote, Evernote, Endnote, Zotero, Todoist, and so on.
+
+If you want the ability to copy Inquerex links to the clipboard without having to enter a particular page number, such that the links open PDFs to the first page, you can type `give_option_to_copy_inquerex_link_without_page" = "y"` on a line by itself anywhere in [the settings file](#settings). The next time you launch Inquerex, it'll create an additional action under the "Services" menu called "Copy Inquerex Link(s) (No Pages)." Use that action when you want to make links to open PDFs to the first page.
 
 ## Technical Footnotes
 
