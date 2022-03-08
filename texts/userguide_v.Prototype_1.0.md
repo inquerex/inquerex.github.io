@@ -43,10 +43,10 @@ When the search is complete, you'll see a message on the screen letting you know
 ### Tips & Tricks
 
 1. Hold down the "shift" key while you click on items in a list to **select multiple items**;
-2. **Select PDFs to search** by right clicking on them and choosing "Inquerex" under "Open with...";
-3. **Enter all your input in a program file** and put it in [the Active Programs folder](#your-inquerex-folder) to [run it the next time you launch Inquerex](#writing-your-own-programs);
-4. **Copy links to open PDFs** by right clicking on the PDFs and looking under [the “Services” menu](#making-your-own-links) (then paste the links anywhere);
-5. If those links open web pages, instead of PDFs, then **make Inquerex your default web browser** in "System Preferences," under "General."
+2. **Select PDFs to search** by right clicking on the PDFs and looking under [the “Services” menu](#making-your-own-links) for "Search PDFs with Inquerex";
+3. **Copy links to open PDFs** by right clicking on the PDFs and looking under [the “Services” menu](#making-your-own-links) for "Copy Inquerex Link" (then paste the links anywhere);
+4. If those links open web pages, instead of PDFs, then **make Inquerex your default web browser** in "System Preferences," under "General."
+5. **Enter all your input in a program file** and put it in [the Active Programs folder](#your-inquerex-folder) to [run it the next time you launch Inquerex](#writing-your-own-programs);
 6. Set **context conditions** in your search queries using [the simple syntax described below](#how-to-craft-a-search-query).
 
 ## Why Inquerex?
@@ -351,7 +351,9 @@ The settings.txt file contains six groups of settings. Let's walk through each g
 
 ### Default Values for Metrics
 
-**This group of settings lists the default values that Inquerex will suggest for *n* when you enter values for *n* in the pop-up window interface.** If you find that the pop-up window interace for setting metrics is too burdensome, and you want to speed up the process a little bit, then you can set the default values that Inquerex will suggest to you in the pop-up windows for setting metrics.
+**This group of settings lists the default values that Inquerex will suggest for *n* when you enter values for *n* in the pop-up window interface.** 
+
+If you find that the pop-up window interace for setting metrics is too burdensome, and you want to speed up the process a little bit, then you can set the default values that Inquerex will suggest to you in the pop-up windows for setting metrics.
 
 Note that setting a default value for a metric is different than turning that metric on in your searches. You'll still have to turn a metric on, in the output options, every time you do a search, no matter what its "default value" might be. In other words, setting a default value for a metric that's greater than 0 isn't the same thing as telling Inquerex to use that metric in all of its searches, by default. It isn't possible to tell Inquerex to do that in this prototype version.
 
@@ -379,7 +381,9 @@ One context in which a conventional naming scheme is common is in database/bibli
 
 ### Valid Character to Divide Author Names
 
-**This, too, is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication** (see [the previous setting description](#valid-character-to-divide-file-names)). If you use a conventional naming scheme in which your PDF file names begin with the names of the author(s), and if you use a particular character to demarcate the names of multiple authors, then you can tell Inquerex about it. Inquerex will look for that particular character in the first part of the file name, and it will separate the names of the authors in the search results.
+**This, too, is a special setting for you if you use a conventional naming scheme for your PDF files: a scheme that begins with the names of authors, followed by the date of publication, and then ends with the title (and subtitle) of the publication** (see [the previous setting description](#valid-character-to-divide-file-names)). 
+
+If you use a conventional naming scheme in which your PDF file names begin with the names of the author(s), and if you use a particular character to demarcate the names of multiple authors, then you can tell Inquerex about it. Inquerex will look for that particular character in the first part of the file name, and it will separate the names of the authors in the search results.
 
 ## Writing Your Own Programs
 
