@@ -43,8 +43,8 @@ When the search is complete, you'll see a message on the screen letting you know
 ### Tips & Tricks
 
 1. Hold down the "shift" key while you click on items in a list to **select multiple items**;
-2. **Select PDFs to search** by right clicking on the PDFs and looking under [the “Services” menu](#making-your-own-links) for "Search PDFs with Inquerex";
-3. **Copy links to open PDFs** by right clicking on the PDFs and looking under [the “Services” menu](#making-your-own-links) for "Copy Inquerex Link" (then paste the links anywhere);
+2. Right click on selected PDFs, then click "Search with Inquerex" under the "Services" menu to **quick select those PDFs**.
+3. **Copy links to open PDFs to particular pages** by right clicking on selected PDFs, going to the Services menu, and clicking "Copy Inquerex Link(s)" (then paste the links anywhere);
 4. If those links open web pages, instead of PDFs, then **make Inquerex your default web browser** in "System Preferences," under "General."
 5. **Enter all your input in a program file** and put it in [the Active Programs folder](#your-inquerex-folder) to [run it the next time you launch Inquerex](#writing-your-own-programs);
 6. Set **context conditions** in your search queries using [the simple syntax described below](#how-to-craft-a-search-query).
