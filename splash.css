@@ -83,6 +83,8 @@ section {
 
 #confirmButtons img {
     width: 12vmax;
+    margin-left: 3vmax;
+    margin-right: 3vmax;
 }
 
 #version {

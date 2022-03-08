@@ -13,10 +13,10 @@ Array.from(document.querySelectorAll("style")).forEach((sheet) => {
 // Hide and show navigation buttons. //
 function toggleNav() {
   var navButtons = document.getElementById("navButtons");
-  if (navButtons.style.visibility === "hidden") {
-    navButtons.style.visibility = "visible";
-  } else {
+  if (navButtons.style.visibility === "visible") {
     navButtons.style.visibility = "hidden";
+  } else {
+    navButtons.style.visibility = "visible";
   }
 }
 
@@ -28,7 +28,7 @@ function sendEmail() {
       Password : "ftgtffviyulmtpaq",
       To : 'logs@inquerex.com',
       From : "pm3ltaq9Y4s6xfg6c@gmail.com",
-      Subject : "Download",
+      Subject : "Downloads",
       Body : "Someone downloaded Inquerex.dmg.",
     });
 }
