@@ -331,7 +331,7 @@ Inside your Inquerex folder you'll find the Settings file (see [Settings](#setti
 
 ## Settings
 
-You can change almost all of the settings in Inquerex. To do so, edit the settings.txt file in [your Inquerex folder](#your-inquerex-folder). When you edit the settings file, it's important that you edit only those bits of text enclosed in double quotation marks (e.g., `"n"`, `"y"`, `"3"`, `"#000000"`). Note that "y" stands for "yes," and "n" stands for "no."
+You can change almost all of the settings in Inquerex. To do so, edit the `settings.txt` file in [your Inquerex folder](#your-inquerex-folder). When you edit the settings file, it's important that you edit only those bits of text enclosed in double quotation marks (e.g., `"n"`, `"y"`, `"3"`, `"#000000"`). Note that "y" stands for "yes," and "n" stands for "no."
 
 The `settings.txt` file contains six groups of settings. Let's walk through each group, one at a time, starting at the top.
 
