@@ -415,7 +415,7 @@ To create a link, right click on one or more selected PDFs, hover over the "Serv
 
 Your clipboard is a place where your comptuer can "copy" some data for you, temporarily, so that you can then "paste" it somewhere else. Anywhere on your computer where you can type text, you should be able to right click and select "Paste" to enter the data on the clipboard there. For example, you could paste a link into Scrivener, Simplenote, Evernote, Endnote, Zotero, Todoist, and so on.
 
-If you want the ability to copy Inquerex links to the clipboard without having to enter a particular page number, such that the links open PDFs to the first page, you can type `give_option_to_copy_inquerex_link_without_page" = "y"` on a line by itself anywhere in [the settings file](#settings). The next time you launch Inquerex, it'll create an additional action under the "Services" menu called "Copy Inquerex Link(s) (No Pages)." Use that action when you want to make links to open PDFs to the first page.
+If you want the ability to copy Inquerex links to the clipboard without having to enter a particular page number, such that the links open PDFs to the first page, you can edit the value for `give_option_to_copy_inquerex_link_without_page"` from "n" to "y in [the settings file](#settings). The next time you launch Inquerex, it'll create an additional action under the "Services" menu called "Copy Inquerex Link(s) (No Pages)." Use that action when you want to make links to open PDFs to the first page.
 
 ## Technical Footnotes
 
