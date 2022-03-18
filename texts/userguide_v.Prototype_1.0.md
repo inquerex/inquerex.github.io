@@ -352,7 +352,7 @@ The `settings.txt` file contains six groups of settings. Let's walk through each
 * `limit_capacity_of_search_history_folder`: Set this to "y" if you want Inquerex to delete a handful of the oldest files from the Search History folder every time  it detects that the Search History folder is greater than or equal to one gigabyte in size.
 * `automatically_check_for_newer_versions_of_the_app`: Set this to "y" if you want Inquerex to check for newer versions of the app every time it completes a search (if an internet connection is available).
 * `default_number_of_context_lines`: Set this to any whole number to tell Inquerex how many lines of context you want to be displayed around match lines in all of your search results, by default.
-* `give_option_to_copy_inquerex_link_without_page`: Set this to "y" if you want Inquerex to create an action in the "Services" menu that will make links to selected PDFs without prompting you to enter a particular page number (see [Making Your Own Links](#making-your-own-links) below).
+* `give_option_to_copy_inquerex_link_to_first_page`: Set this to "y" if you want Inquerex to create an action in the "Services" menu that will make links to selected PDFs without prompting you to enter a particular page number (see [Making Your Own Links](#making-your-own-links) below).
 
 ### Default Values for Metrics
 
@@ -423,7 +423,7 @@ To create a link, right click on one or more selected PDFs, hover over the "Serv
 
 Your clipboard is a place where your comptuer can "copy" some data for you, temporarily, so that you can then "paste" it somewhere else. Anywhere on your computer where you can type text, you should be able to right click and select "Paste" to enter the data on the clipboard there. For example, you could paste a link into Scrivener, Simplenote, Evernote, Endnote, Zotero, Todoist, and so on.
 
-If you want the ability to copy Inquerex links to the clipboard without having to enter a particular page number, such that the links open PDFs to the first page, you can edit the value for `give_option_to_copy_inquerex_link_without_page"` from "n" to "y" in [the settings file](#settings). The next time you launch Inquerex, it'll create an additional action under the "Services" menu called "Copy Inquerex Link(s) (First Page)." Use that action when you want to make links to open PDFs to the first page.
+If you want the ability to copy Inquerex links to the clipboard without having to enter a particular page number, such that the links open PDFs to the first page, you can edit the value for `give_option_to_copy_inquerex_link_to_first_page"` from "n" to "y" in [the settings file](#settings). The next time you launch Inquerex, it'll create an additional action under the "Services" menu called "Copy Inquerex Link(s) (First Page)." Use that action when you want to make links to open PDFs to the first page.
 
 ## Technical Footnotes
 
