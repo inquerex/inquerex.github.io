@@ -413,7 +413,6 @@ A few tips and tricks for writing program files:
 1. You can **leave the query name and pdf set name variables blank** if you want.
 2. **Don't worry too much about making your input variables consistent** with one another. Inquerex will reconcile inconsistent variable values automatically. Check [the "input" log](#logs) to see which variables (if any) Inquerex changed.
 3. You can **drag and drop PDF files from a Finder window** onto the Text Editor window, under `program_pdf_paths` and Text Edit will generate the file paths to those files for you, automatically. With a little practice, this is one of the easiest ways to select PDFs to search. Note that there's no need to enclose the file paths within quotation marks.
-4. If you have a program file open in Text Editor, and you run it, and then you edit it, your computer will issue an alert: "The document could not be saved. The file has been changed by another application." **Click "Save Anyway."** Your computer is letting you know that Inquerex modified your program file. But the modification is trivial. Just click "Save Anyway" and proceed.
 
 ## Making Your Own Links
 
