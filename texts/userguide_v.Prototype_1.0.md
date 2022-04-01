@@ -432,6 +432,20 @@ If you want the ability to copy Inquerex links to the clipboard without having t
 
 * **Reserved Characters in File Names**: In file names of selected PDFs, never use `\` or `|` or ``` ` ```.
 
+* **Using Perl-Compatible Regular Expressions (PCREs)**: Inquerex is able to interpret perl-compatible regular expressions, in search queries. To indicate that a segment of text in your search query is a PCRE, you need to enclose that segment of text with a `/` (backslash) at the beginning and the end. Two caveats:
+1. If an expression within a query contains a PCRE then *that expression* must contain *only* that PCRE.
+
+So this query is valid:
+>`[/PCRE/] words`
+But this query isn't:
+>`[/PCRE/ words] words`
+And this query is valid:
+>`[words] /PCRE/ [ [words] words [/PCRE/] ]`
+But this query isn't:
+>`[words] letters/PCRE/letters [ [words] words [/PCRE/] ]`
+
+2. All PCREs within all queries will match *whole words only*.
+
 * **Zotero Integration**: If you're a [Zotero](www.zotero.org) user, and you want Inquerex to generate `zotero://open-pdf` links to open PDFs instead of `inquerex://` links, then type `prefer_zotero_links="y"` on a line by itself anywhere in the Settings file. But note that there's a significant limitation with `zotero://open-pdf` links. Zotero can only open PDFs to pages that have integers as page labels (e.g., 1, 2, 3, etc.). Unless you edit Zotero's code, Zotero can't open PDFs to pages with other page labels (e.g, "xi," "Appendix I," "Figure 3," "Table 6," etc.). In contrast, Inquerex can open a PDF to any page with any page label containing [the allowed characters described above](#allowed-characters).
 
 * **Exiting with a Non-Zero Status**<a id="exiting-with-a-non-zero-status"></a>: If your computer issues an alert that says Inquerex "exited with a non-zero status," then either there's something that needs to be fixed in Inquerex's source code or there's something amiss about the input for the current search (e.g., a file name contains a forbidden character). Or both. If you want help troubleshooting what happened, and if you're able, send an email to support@inquerex.com with a copy of the `lines.log` file attached. You'll find the `lines.log` file in the Logs folder in your Inquerex folder.
