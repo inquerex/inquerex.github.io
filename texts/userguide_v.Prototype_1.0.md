@@ -154,6 +154,9 @@ A "search query" is a line of text that your computer uses to find things for yo
 #### tyrant
 <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrant**</span></span>, tyrants, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
 
+#### tyrant(s)
+<span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrant**</span></span>, <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrants**</span></span>, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
+
 #### tyran
 tyrant, tyrants, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
 
@@ -167,9 +170,6 @@ tyrant, tyrants, <span style="background-color: #B8860B"><span style="color: #FF
 tyrant, <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrants**</span></span>, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
 
 #### tyrant(\*)
-<span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrant**</span></span>, <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrants**</span></span>, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
-
-#### tyrant(s)
 <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrant**</span></span>, <span style="background-color: #B8860B"><span style="color: #FFFFFF">**tyrants**</span></span>, tyranny, (tyrannies), tyrannize, tyrannical, tyrannicide
 
 #### tyranny/tyrannize/tyrannical
