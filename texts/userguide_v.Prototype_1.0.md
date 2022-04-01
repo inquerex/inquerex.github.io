@@ -121,7 +121,7 @@ A "search query" is a line of text that your computer uses to find things for yo
 | **(characters)** | "characters" may appear, too |
 | **\*** | one or more letters and/or digits |
 | **a/b**  | a *or* b |
-| **/string/** | "string" is a [perl-compatible regular expression](#using-perl-compatible-regular-expressions-(PCREs) |
+| **/string/** | "string" is a [perl-compatible regular expression](#using-perl-compatible-regular-expressions-PCREs) |
 | **\\** | interpret the next character literally <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  \\[ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\( &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\\* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\"  <br> &nbsp; |
 
 ### Rules
