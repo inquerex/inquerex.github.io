@@ -432,19 +432,7 @@ If you want the ability to copy Inquerex links to the clipboard without having t
 
 * **Reserved Characters in File Names**: In file names of selected PDFs, never use `\` or `|` or ``` ` ```.
 
-* **Using Perl-Compatible Regular Expressions (PCREs)**: Inquerex is able to interpret perl-compatible regular expressions, in search queries. To indicate that a segment of text in your search query is a PCRE, you need to enclose that segment of text with a `/` (backslash) at the beginning and the end. Two caveats:
-1. If an expression within a query contains a PCRE then *that expression* must contain *only* that PCRE.
-
-So this query is valid:
->`[/PCRE/] words`
-But this query isn't:
->`[/PCRE/ words] words`
-And this query is valid:
->`[words] /PCRE/ [ [words] words [/PCRE/] ]`
-But this query isn't:
->`[words] letters/PCRE/letters [ [words] words [/PCRE/] ]`
-
-2. All PCREs within all queries will match *whole words only*.
+* **Using Perl-Compatible Regular Expressions (PCREs)**: Inquerex is able to interpret perl-compatible regular expressions, in search queries. To indicate that a segment of text in your search query is a PCRE, you need to enclose that segment of text with a `/` (backslash) at the beginning and the end. If an expression within a query contains a PCRE then *that expression* must contain *only* that PCRE. So this query is valid: `[/PCRE/] words`; but this one isn't: `[/PCRE/ words] words`. And this query is valid: `[words] /PCRE/ [ [words] words [/PCRE/] ]`; but this one isn't: `[words] letters/PCRE/letters [ [words] words [/PCRE/] ]`. Also, for now, all PCREs within all queries will match whole words only. That's a constraint that's internal to Inquerex's query interpreter.
 
 * **Zotero Integration**: If you're a [Zotero](www.zotero.org) user, and you want Inquerex to generate `zotero://open-pdf` links to open PDFs instead of `inquerex://` links, then type `prefer_zotero_links="y"` on a line by itself anywhere in the Settings file. But note that there's a significant limitation with `zotero://open-pdf` links. Zotero can only open PDFs to pages that have integers as page labels (e.g., 1, 2, 3, etc.). Unless you edit Zotero's code, Zotero can't open PDFs to pages with other page labels (e.g, "xi," "Appendix I," "Figure 3," "Table 6," etc.). In contrast, Inquerex can open a PDF to any page with any page label containing [the allowed characters described above](#allowed-characters).
 
