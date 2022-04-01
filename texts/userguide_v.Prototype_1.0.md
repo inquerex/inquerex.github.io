@@ -267,20 +267,20 @@ You your best thing, Sethe. <span style="background-color: #B8860B"><span style=
 If you've written a complex search query, and you want to make it easy to use that query again, then you might want to know a few things:
 
 * **Past Queries**: Inquerex saves all of your past queries in `.txt` files, automatically, in your Past Queries folder.
-* **Saved Queries**: Inquerex will save all of your queries, by name, in your Saved Queries folder, if you tell Inquerex to [prompt you to name your queries](#prompt-user-to-name-query).
+* **Saved Queries**: Inquerex will save all of your queries, by name, in `.txt` files in your Saved Queries folder if you tell Inquerex to [prompt you to name your queries](#prompt-user-to-name-query).
 * On the "enter a search query" window, there's a button called **"Use Saved Query."** If you click that button, Inquerex will ask you to select a `.txt` file that contains a query; and it'll assume that the best place to start looking is in your Saved Queries folder.
 
 So you've got some options:
 
-* You could copy `.txt` files from your Past Queries folder into your Saved Queries folder, manually, and give them memorable names. Then you could open them, yourself, before launching Inquerex; or you could click "Use Saved Query" and load them easily within the Inquerex user interface.
-* You could tell Inquerex that you want to name all of your queries (see [`prompt_user_to_name_query`](#prompt-user-to-name-query) below), in which case Inquerex will save all of your queries, by name, in the Saved Queries folder, automatically.
-* You could save your queries, yourself, anywhere on your computer, and then copy and paste them into the "enter a search query" window whenever you want.
+* You could copy some of the `.txt` files from your Past Queries folder into your Saved Queries folder, manually, and give them memorable names.
+* You could tell Inquerex that you want to name all of your queries (see [`prompt_user_to_name_query`](#prompt-user-to-name-query) below), in which case Inquerex will save all of your queries, by name, in `.txt` files in the Saved Queries folder, automatically.
+* You could save your queries anywhere on your computer, and then copy and paste them into the "enter a search query" window whenever you want.
 
 ## Choosing Output Options
 
 The final input window will be “choose output option(s) from the list below.” Remember: you can select multiple output options by clicking on multiple items in the list while holding down the `shift` key.
 
-* **Basic Search**: Display matches in the selected files.
+* **Basic Search**: Display matches in the selected files. Note that it isn't necessary to select this output option if you've selected at least one other output option.
 * **Search Specific Pages**<a id="search-specific-pages"></a>: Display matches only if they appear on specific pages in the selected files. If you're searching in multiple files, you'll find the line with the path to the file(s) you want, and you'll type page range(s) after them. After page ranges you can type a description, too. You'll need to draw a line between the file path, page range(s), and description using the `|` character (under the delete key). For example: `path/to/file.pdf | x-y | Chapter 5`. Note that in all page ranges, the first and last page labels must be **unique** within that PDF.
 * **Show Search Summary Only**: Display only the statistical report of the search results.
 * **Match Upper and Lower Case**: Ignore the difference between upper and lower case letters in the selected files.
