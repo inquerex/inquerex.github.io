@@ -466,4 +466,4 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | [pdfpagelabels](https://github.com/HeimMatthias/pdfpagelabels) | [GPLv3](https://github.com/HeimMatthias/pdfpagelabels/blob/main/LICENSE) |
 | [pdftotext](https://www.xpdfreader.com/pdftotext-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
 | [wkhtmltopdf](https://wkhtmltopdf.org/) | [LGPLv3](https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/LICENSE) |
-| [xml starlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
+| [xmlstarlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
