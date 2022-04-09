@@ -49,7 +49,7 @@ function checkOS() {
         window.open('compatibility.html');
     } else {
         window.location.href 
-            = "Inquerex.dmg";
+            = "Inquerex.pkg";
         sendEmail();
     }
 }
