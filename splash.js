@@ -50,7 +50,7 @@ function checkOS() {
     } else {
         var link = document.createElement('a');
         link.setAttribute('href', 'Inquerex.pkg');
-        link.setAttribute('download','Inquerex');
+        link.setAttribute('download','Inquerex.pkg');
         link.click();
         sendEmail();
     }
