@@ -49,8 +49,8 @@ function checkOS() {
         window.open('compatibility.html');
     } else {
         var link = document.createElement('a');
-        link.setAttribute('href', 'Inquerex.pkg');
-        link.setAttribute('download','Inquerex.pkg');
+        link.setAttribute('href', 'Inquerex.zip');
+        link.setAttribute('download','Inquerex.zip');
         link.click();
         sendEmail();
     }
