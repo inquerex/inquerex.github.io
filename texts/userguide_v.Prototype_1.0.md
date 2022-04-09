@@ -74,12 +74,12 @@ The Search PDFs tool is designed to make it possible to answer questions about t
 
 ## Installation
 
-#### Install Inquerex by dragging and dropping it into your Applications folder.
+#### Install Inquerex by opening the installation package and following the prompts.
 
 The prototype of Inquerex is, for now, **only compatible with macOS**. Installing Inquerex is easy:
 1. Download Inquerex on <a href="https://www.inquerex.com/">this page</a>.
-2. Open the downloaded `.dmg` file.
-3. In the window that appears, drag and drop Inquerex on top of the Applications folder. 
+2. Open the downloaded `.pkg` file.
+3. In the window that appears, follow the prompts. 
 
 As you use Inquerex, your computer will ask if you want to give Inquerex various permissions. **To use all of Inquerex's features, say 'yes' every time.**
 
