@@ -48,8 +48,10 @@ function checkOS() {
     if (OSName !== "Macintosh") {
         window.open('compatibility.html');
     } else {
-        window.location.href 
-            = "Inquerex.pkg";
+        var link = document.createElement('a');
+        link.setAttribute('href', 'Inquerex.pkg');
+        link.setAttribute('download','Inquerex');
+        link.click();
         sendEmail();
     }
 }
