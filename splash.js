@@ -46,12 +46,14 @@ function sendEmail() {
 // Redirect if OS isn't Macintosh. //
 function checkOS() {
     if (OSName !== "Macintosh") {
-        window.open('compatibility.html');
+        var compatibilityLink = document.createElement('a');
+        compatibilityLink.setAttribute('href', 'compatibility.html');
+        compatibilityLink.click();
     } else {
-        var link = document.createElement('a');
-        link.setAttribute('href', 'Inquerex.zip');
-        link.setAttribute('download','Inquerex.zip');
-        link.click();
+        var downloadLink = document.createElement('a');
+        downloadLink.setAttribute('href', 'Inquerex.zip');
+        downloadLink.setAttribute('download','Inquerex.zip');
+        downloadLink.click();
         sendEmail();
     }
 }
