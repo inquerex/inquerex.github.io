@@ -84,7 +84,7 @@ The prototype of Inquerex is, for now, **only compatible with macOS**. Installin
 5. Close that window, "eject" the mounted drive, and delete the `.zip` and `.dmg` files.
 6. Open your "Applications" folder and double-click on "Inquerex.app." Your computer will tell you that it can't open Inquerex because it is from an "unidentified developer" (one that isn't registered with Apple). That's ok. Click "Cancel." Then, right-click on "Inquerex.app" (or hold down the `control` key and click on it). In the menu that appears, click "Open." Then, in the window that appears, click "Open" once more.
 
-After that, Inquerex should launch. And it should launch every time you double-click on "Inquerex.app." As you use Inquerex, your computer will ask if you want to grant Inquerex various permissions. **To use all of Inquerex's features (e.g., the ability to open PDFs to particular pages), say 'yes' every time.**
+After that, Inquerex should launch. And it should launch every time you double-click on "Inquerex.app." As you use Inquerex, your computer will ask if you want to grant Inquerex various permissions. **To use all of Inquerex's features (e.g., the ability to open PDFs to particular pages), say "yes" every time.**
 
 ## Selecting PDFs to Search
 
