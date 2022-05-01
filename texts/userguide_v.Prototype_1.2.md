@@ -2,7 +2,7 @@
 
 # User Guide
 
-Prototype 1.1
+Prototype 1.2
 
 I. Getting Oriented
 
@@ -466,8 +466,9 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 
 | Name | License |
 | :------------ | :------------ |
-| [dos2unix](https://waterlan.home.xs4all.nl/dos2unix.html) | [FreeBSD](https://waterlan.home.xs4all.nl/dos2unix/COPYING.txt) |
+| [dos2unix](https://waterlan.home.xs4all.nl/dos2unix.html) | [BSD](https://waterlan.home.xs4all.nl/dos2unix/COPYING.txt) |
 | [gnu grep](https://www.gnu.org/software/grep/manual/grep.html) | [GPLv3](https://www.gnu.org/software/grep/manual/grep.html#Copying) |
+| [pcre1](https://www.pcre.org/) | [BSD](https://www.pcre.org/licence.txt) |
 | [pdfgrep](https://pdfgrep.org/) | [GPLv2](https://gitlab.com/pdfgrep/pdfgrep/-/blob/master/COPYING) |
 | [pdfinfo](https://www.xpdfreader.com/pdfinfo-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
 | [pdfpagelabels](https://github.com/HeimMatthias/pdfpagelabels) | [GPLv3](https://github.com/HeimMatthias/pdfpagelabels/blob/main/LICENSE) |
