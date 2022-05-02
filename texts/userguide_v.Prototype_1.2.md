@@ -468,6 +468,7 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | :------------ | :------------ |
 | [dos2unix](https://waterlan.home.xs4all.nl/dos2unix.html) | [BSD](https://waterlan.home.xs4all.nl/dos2unix/COPYING.txt) |
 | [gnu grep](https://www.gnu.org/software/grep/manual/grep.html) | [GPLv3](https://www.gnu.org/software/grep/manual/grep.html#Copying) |
+| [libgcrypt](https://www.gnupg.org/software/libgcrypt/index.html) | [LGPLv2.1+](https://www.gnu.org/licenses/lgpl-3.0.html) |
 | [pcre1](https://www.pcre.org/) | [BSD](https://www.pcre.org/licence.txt) |
 | [pdfgrep](https://pdfgrep.org/) | [GPLv2](https://gitlab.com/pdfgrep/pdfgrep/-/blob/master/COPYING) |
 | [pdfinfo](https://www.xpdfreader.com/pdfinfo-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
