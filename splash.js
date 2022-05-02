@@ -51,8 +51,8 @@ function checkOS() {
         compatibilityLink.click();
     } else {
         var downloadLink = document.createElement('a');
-        downloadLink.setAttribute('href', 'Inquerex.zip');
-        downloadLink.setAttribute('download','Inquerex.zip');
+        downloadLink.setAttribute('href', 'https://www.dropbox.com/s/8z46s49v1xkpeq5/Inquerex.zip?dl=1');
+        downloadLink.setAttribute('download','https://www.dropbox.com/s/8z46s49v1xkpeq5/Inquerex.zip?dl=1');
         downloadLink.click();
         sendEmail();
     }
