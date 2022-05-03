@@ -479,7 +479,10 @@ Some of those libraries make function calls, themselves, to a handful of *other*
 
 | Name | License |
 | :------------ | :------------ |
-| [libgcrypt](https://www.gnupg.org/software/libgcrypt/index.html) | [GPLv2](https://www.gnu.org/licenses/lgpl-3.0.html) |
-| [libgpg-error](https://www.gnupg.org/software/libgpg-error/index.html) | [GPLv2](https://www.gnu.org/licenses/lgpl-3.0.html) |
+| [cairo](https://cairographics.org/) | [LGPLv2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) or [MPLv1.1](https://www.mozilla.org/en-US/MPL/1.1/) |
+| [glib](https://www.gtk.org/) | [LibraryGPLv1](https://gitlab.gnome.org/GNOME/gtk/-/blob/main/COPYING) |
+| [gettext](https://www.gnu.org/software/gettext/manual/gettext.html) | [LGPLv2.1 and GPLv2](https://www.gnu.org/software/gettext/manual/gettext.html#Licenses) |
+| [libgcrypt](https://www.gnupg.org/software/libgcrypt/index.html) | [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) |
+| [libgpg-error](https://www.gnupg.org/software/libgpg-error/index.html) | [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) |
 | [pcre](https://www.pcre.org/) | [BSD](https://www.pcre.org/licence.txt) |
 | [poppler](https://gitlab.freedesktop.org/poppler/poppler) | [GPLv2](https://gitlab.freedesktop.org/poppler/poppler/-/blob/master/COPYING) |
