@@ -475,7 +475,7 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | [wkhtmltopdf](https://wkhtmltopdf.org/) | [LGPLv3](https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/LICENSE) |
 | [xmlstarlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
 
-Some of those libraries make function calls, themselves, to a handful of *other* free software libraries:
+Some of those libraries make function calls, themselves, to a handful of *other* free software libraries. Likewise, each of these may be redistributed (for free or commercially) in accordance with its license:
 
 | Name | License |
 | :------------ | :------------ |
