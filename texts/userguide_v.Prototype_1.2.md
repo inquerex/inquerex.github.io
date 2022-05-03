@@ -468,11 +468,18 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | :------------ | :------------ |
 | [dos2unix](https://waterlan.home.xs4all.nl/dos2unix.html) | [BSD](https://waterlan.home.xs4all.nl/dos2unix/COPYING.txt) |
 | [gnu grep](https://www.gnu.org/software/grep/manual/grep.html) | [GPLv3](https://www.gnu.org/software/grep/manual/grep.html#Copying) |
-| [libgcrypt](https://www.gnupg.org/software/libgcrypt/index.html) | [LGPLv2.1+](https://www.gnu.org/licenses/lgpl-3.0.html) |
-| [pcre1](https://www.pcre.org/) | [BSD](https://www.pcre.org/licence.txt) |
 | [pdfgrep](https://pdfgrep.org/) | [GPLv2](https://gitlab.com/pdfgrep/pdfgrep/-/blob/master/COPYING) |
 | [pdfinfo](https://www.xpdfreader.com/pdfinfo-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
 | [pdfpagelabels](https://github.com/HeimMatthias/pdfpagelabels) | [GPLv3](https://github.com/HeimMatthias/pdfpagelabels/blob/main/LICENSE) |
 | [pdftotext](https://www.xpdfreader.com/pdftotext-man.html) | [GPLv2 and/or GPLv3](https://www.xpdfreader.com/opensource.html) |
 | [wkhtmltopdf](https://wkhtmltopdf.org/) | [LGPLv3](https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/LICENSE) |
 | [xmlstarlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
+
+Some of those libraries make function calls, themselves, to a handful of *other* free software libraries:
+
+| Name | License |
+| :------------ | :------------ |
+| [libgcrypt](https://www.gnupg.org/software/libgcrypt/index.html) | [GPLv2](https://www.gnu.org/licenses/lgpl-3.0.html) |
+| [libgpg-error](https://www.gnupg.org/software/libgpg-error/index.html) | [GPLv2](https://www.gnu.org/licenses/lgpl-3.0.html) |
+| [pcre](https://www.pcre.org/) | [BSD](https://www.pcre.org/licence.txt) |
+| [poppler](https://gitlab.freedesktop.org/poppler/poppler) | [GPLv2](https://gitlab.freedesktop.org/poppler/poppler/-/blob/master/COPYING) |
