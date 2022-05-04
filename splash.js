@@ -51,7 +51,7 @@ function checkOS() {
         compatibilityLink.click();
     } else {
         var downloadLink = document.createElement('a');
-        downloadLink.setAttribute('href', 'https://www.dropbox.com/s/soahb4jbsb9trt9/Inquerex%20%28Prototype%201.2%29.pkg?dl=1');
+        downloadLink.setAttribute('href', 'https://www.dropbox.com/s/rlgpzyiuiq7x9a2/Inquerex.zip?dl=1');
         downloadLink.click();
         sendEmail();
     }
