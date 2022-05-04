@@ -462,7 +462,11 @@ www.inquerex.com
 
 ## Other Licenses
 
-Inquerex makes function calls to a handful of [free software](https://www.gnu.org/philosophy/open-source-misses-the-point.html) libraries, each of which may be redistributed (for free or commercially) in accordance with its license:
+Inquerex makes direct and indirect function calls to a handful of [free software](https://www.gnu.org/philosophy/open-source-misses-the-point.html) libraries. Although these libraries come [aggregated](https://www.gnu.org/licenses/gpl-faq.html#MereAggregation) with Inquerex, Inquerex is distinct from them. Each of them may be modified and redistributed (for free or commercially) in accordance with its license.
+
+### Direct Function Calls
+
+You'll find these libraries in the "Inquerex.app" folder. Here's the path: `/Applications/Inquerex.app/Contents/Resources/Libraries`. You can browse the main Inquerex.app directory in Finder if you right click on "Inquerex.app" in your Applications folder and select `Show Package Contents`.
 
 | Name | License |
 | :------------ | :------------ |
@@ -475,7 +479,9 @@ Inquerex makes function calls to a handful of [free software](https://www.gnu.or
 | [wkhtmltopdf](https://wkhtmltopdf.org/) | [LGPLv3](https://github.com/wkhtmltopdf/wkhtmltopdf/blob/master/LICENSE) |
 | [xmlstarlet](http://xmlstar.sourceforge.net/) | [MIT](http://xmlstar.sourceforge.net/license.php) |
 
-Some of those libraries make function calls, themselves, to a handful of *other* free software libraries. Likewise, each of these may be redistributed (for free or commercially) in accordance with its license:
+### Indirect Function Calls
+
+The [libraries above](#direct-function-calls) make function calls, themselves, to a handful of *other* libraries. You'll find these libraries in `/Library/ApplicationSupport/Inquerex`.
 
 | Name | License |
 | :------------ | :------------ |
