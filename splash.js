@@ -47,12 +47,12 @@ function sendEmail() {
 function checkOS() {
     if (OSName !== "Macintosh") {
         var compatibilityLink = document.createElement('a');
-        compatibilityLink.setAttribute('href', 'compatibility.html');
+        compatibilityLink.setAttribute('href', 'apology.html');
         compatibilityLink.click();
     } else {
         var downloadLink = document.createElement('a');
-        downloadLink.setAttribute('href', 'https://www.dropbox.com/s/rlgpzyiuiq7x9a2/Inquerex.zip?dl=1');
+        downloadLink.setAttribute('href', 'apology.html');
         downloadLink.click();
-        sendEmail();
+        //sendEmail();
     }
 }
