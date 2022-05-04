@@ -466,7 +466,7 @@ Inquerex makes direct and indirect function calls to a handful of [free software
 
 ### Direct Function Calls
 
-You'll find these libraries in the "Inquerex.app" folder. Here's the path: `/Applications/Inquerex.app/Contents/Resources/Libraries`. You can browse the main Inquerex.app directory in Finder if you right click on "Inquerex.app" in your Applications folder and select `Show Package Contents`.
+You'll find the libraries to which Inquerex makes direct function calls in the "Inquerex.app" folder. Here's the path to those libraries: `/Applications/Inquerex.app/Contents/Resources/Libraries`. You can browse the main "Inquerex.app" directory in Finder if you right click on "Inquerex.app" in your Applications folder and select `Show Package Contents`.
 
 | Name | License |
 | :------------ | :------------ |
@@ -481,14 +481,14 @@ You'll find these libraries in the "Inquerex.app" folder. Here's the path: `/App
 
 ### Indirect Function Calls
 
-The [libraries above](#direct-function-calls) make function calls, themselves, to a handful of *other* libraries. You'll find these libraries in `/Library/ApplicationSupport/Inquerex`.
+Some of the [libraries above](#direct-function-calls) make function calls, themselves, to a handful of *other* libraries. You'll find these other libraries in `/Library/ApplicationSupport/Inquerex`.
 
-| Name | License |
+| Name | License | Caller(s) |
 | :------------ | :------------ |
-| [cairo](https://cairographics.org/) | [LGPLv2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) or [MPLv1.1](https://www.mozilla.org/en-US/MPL/1.1/) |
-| [glib](https://www.gtk.org/) | [LGPLv2.1](https://gitlab.gnome.org/GNOME/gtk/-/blob/main/COPYING) |
-| [gettext](https://www.gnu.org/software/gettext/manual/gettext.html) | [LGPLv2.1 and GPLv3](https://www.gnu.org/software/gettext/manual/gettext.html#Licenses) |
-| [libgcrypt](https://www.gnupg.org/software/libgcrypt/index.html) | [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) |
-| [libgpg-error](https://www.gnupg.org/software/libgpg-error/index.html) | [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) |
-| [pcre](https://www.pcre.org/) | [BSD](https://www.pcre.org/licence.txt) |
-| [poppler](https://gitlab.freedesktop.org/poppler/poppler) | [GPLv2](https://gitlab.freedesktop.org/poppler/poppler/-/blob/master/COPYING) |
+| [cairo](https://cairographics.org/) | [LGPLv2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) or [MPLv1.1](https://www.mozilla.org/en-US/MPL/1.1/) | pdfpagelabels |
+| [glib](https://www.gtk.org/) | [LGPLv2.1](https://gitlab.gnome.org/GNOME/gtk/-/blob/main/COPYING) | pdfpagelabels |
+| [gettext](https://www.gnu.org/software/gettext/manual/gettext.html) | [LGPLv2.1 and GPLv3](https://www.gnu.org/software/gettext/manual/gettext.html#Licenses) | pdfpagelabels |
+| [libgcrypt](https://www.gnupg.org/software/libgcrypt/index.html) | [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) | pdfgrep |
+| [libgpg-error](https://www.gnupg.org/software/libgpg-error/index.html) | [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) | pdfgrep |
+| [pcre](https://www.pcre.org/) | [BSD](https://www.pcre.org/licence.txt) | gnu grep, pdfgrep |
+| [poppler](https://gitlab.freedesktop.org/poppler/poppler) | [GPLv2](https://gitlab.freedesktop.org/poppler/poppler/-/blob/master/COPYING) | pdfgrep, pdfinfo, pdfpagelabels, pdftotext
