@@ -78,13 +78,9 @@ The Search PDFs tool is designed to make it possible to answer questions about t
 
 The prototype of Inquerex is, for now, **only compatible with macOS**. Installing Inquerex is easy:
 1. Download Inquerex on <a href="https://www.inquerex.com/">this page</a>.
-2. Double-click on the downloaded `.zip` file.
-3. Double-click on the generated `.dmg` file.
-4. In the window that appears, drag and drop "Inquerex.app" on top of the "Applications" folder.
-5. Close that window, "eject" the mounted drive, and delete the `.zip` and `.dmg` files.
-6. Open your "Applications" folder and double-click on "Inquerex.app." Your computer will tell you that it can't open Inquerex because it is from an "unidentified developer" (one that isn't registered with Apple). That's ok. Click "Cancel." Then, right-click on "Inquerex.app" (or hold down the `control` key and click on it). In the menu that appears, click "Open." Then, in the window that appears, click "Open" once more.
+2. Double-click on the downloaded `.pkg` file and follow the on-screen instructions.
 
-After that, Inquerex should launch. And it should launch every time you double-click on "Inquerex.app." As you use Inquerex, your computer will ask if you want to grant Inquerex various permissions. **To use all of Inquerex's features (e.g., the ability to open PDFs to particular pages), say "yes" every time.**
+After that, Inquerex should launch. And it should launch every time you double-click on "Inquerex.app" in your "Applications" folder. As you use Inquerex, your computer will ask if you want to grant Inquerex various permissions. **To use all of Inquerex's features (e.g., the ability to open PDFs to particular pages), say "yes" every time.**
 
 ## Selecting PDFs to Search
 
@@ -466,7 +462,7 @@ Inquerex makes direct and indirect function calls to a handful of [free software
 
 ### Direct Function Calls
 
-You'll find the libraries to which Inquerex makes direct function calls in the "Inquerex.app" folder. Here's the path to those libraries: `/Applications/Inquerex.app/Contents/Resources/Libraries`. You can browse the main "Inquerex.app" directory in Finder if you right click on "Inquerex.app" in your Applications folder and select `Show Package Contents`.
+You can find the libraries to which Inquerex makes direct function calls in the "Inquerex.app" folder. Here's the path to those libraries: `/Applications/Inquerex.app/Contents/Resources/Libraries`. You can browse the main "Inquerex.app" directory in Finder if you right click on "Inquerex.app" in your Applications folder and select `Show Package Contents`.
 
 | Name | License |
 | :------------ | :------------ |
@@ -481,7 +477,7 @@ You'll find the libraries to which Inquerex makes direct function calls in the "
 
 ### Indirect Function Calls
 
-Some of the [libraries above](#direct-function-calls) make function calls, themselves, to a handful of *other* libraries. You'll find these other libraries in `/Library/ApplicationSupport/Inquerex`.
+Some of the [libraries above](#direct-function-calls) make function calls, themselves, to a handful of *other* libraries. To see these other libraries in Finder you'd need to make it possible to see "hidden files." To do that, click on the Finder app, then press `command`, `shift`, and `.` at the same time. Pressing this combination of keys toggles the "view hidden files" setting on/off. Then you can find these libraries in `/usr/local/opt`, which is where Inquerex installs them for you.
 
 | Name | License | Caller(s) |
 | :------------ | :------------ | :------------ |
